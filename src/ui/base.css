@@ -23,6 +23,9 @@
   color:var(--ink);
   background:var(--surface);
 }
+/* Thin scrollbars in the page palette instead of the OS default with arrow buttons (user request 2026-11-11).
+   Colours come from tokens only; no track, so lists and the page keep their own surface. */
+* { scrollbar-width:thin; scrollbar-color:color-mix(in srgb, var(--muted) 40%, transparent) transparent; }
 * {
   box-sizing:border-box;
 }
@@ -1246,8 +1249,8 @@ input[type=date] {
 .search-select svg { width:17px; height:17px; flex-shrink:0; stroke:var(--muted); stroke-width:1.6; fill:none; }
 .search-select:focus,.search-input:focus { border-color:var(--accent); outline:none; }
 .search-select[aria-invalid=true] { border-color:var(--error); }
-.search-popover { z-index:32; width:var(--radix-popover-trigger-width); min-width:300px; max-width:calc(100vw - 32px); max-height:var(--radix-popover-content-available-height); overflow:auto; padding:20px; border-radius:var(--radius-dialog); background:var(--surface); color:var(--ink); box-shadow:var(--panel); }
-.search-results { overflow:auto; min-height:0; max-height:45dvh; margin-top:12px; }
+.search-popover { z-index:32; width:var(--radix-popover-trigger-width); min-width:300px; max-width:calc(100vw - 32px); max-height:var(--radix-popover-content-available-height); display:flex; flex-direction:column; overflow:hidden; padding:20px; border-radius:var(--radius-dialog); background:var(--surface); color:var(--ink); box-shadow:var(--panel); }
+.search-results { flex:1 1 auto; overflow:auto; min-height:0; max-height:45dvh; margin-top:12px; } /* only the list scrolls; the popover itself no longer adds a second scrollbar */
 .search-results button { display:flex; gap:12px; align-items:center; width:100%; min-height:48px; text-align:left; border-bottom:1px solid var(--line); padding:10px 4px; }
 .search-results button>span:first-child { flex:1; min-width:0; overflow-wrap:anywhere; }
 .search-results button[data-active=true] { color:var(--accent); box-shadow:var(--inset); border-radius:var(--radius-input); }
