@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>居留填表助手 · 柔和新拟物预览</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-size: 100%;
+      --surface: #eee8df; --ink: #342d28; --muted: #71665d;
+      --accent: #ac4e2e; --error: #a73930;
+      --accent-hover: #994327; --line: #d3c8bc;
+      --raised: 5px 5px 12px #d8d1c8, -5px -5px 12px #fffbf5;
+      --inset: inset 2px 2px 5px #dcd5cc, inset -2px -2px 5px #f9f5ef;
+      --panel: 8px 8px 24px #ddd6cd, -8px -8px 24px #fbf6ef;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      color: var(--ink); background: #e5e0d8; font-synthesis: none;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    button, input, select { font: inherit; color: inherit; }
+    button { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+    button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    button:disabled { cursor: default; }
+    button, input, select { touch-action: manipulation; }
+    [hidden] { display: none !important; }
+    .studio { max-width: 1020px; margin: auto; padding: 48px 32px; display: grid; grid-template-columns: 1fr 390px; gap: 80px; align-items: center; min-height: 100dvh; }
+    .eyebrow { color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: .18em; }
+    .notes h1 { margin: 20px 0; font-size: 38px; line-height: 1.4; font-weight: 600; letter-spacing: -.04em; }
+    .notes > p { font-size: 15px; color: var(--muted); line-height: 1.9; max-width: 32ch; }
+    .notes dl { margin: 36px 0; }
+    .notes dl > div { padding: 16px 0; border-top: 1px solid #d0c8be; }
+    .notes dt { font-size: 14px; font-weight: 600; }
+    .notes dd { margin: 6px 0 0; font-size: 13px; color: var(--muted); line-height: 1.8; }
+    .demo-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .demo-controls button { border: 1px solid #b8afa3; border-radius: 24px; background: transparent; min-height: 44px; padding: 8px 16px; font-size: 13px; }
+    .demo-controls button[aria-pressed="true"] { background: var(--ink); color: #faf7f2; border-color: var(--ink); }
+    .fine { font-size: 12px !important; margin-top: 20px; }
+    .phone { background: var(--surface); border-radius: 32px; box-shadow: 0 24px 60px #67544325; overflow: hidden; position: relative; }
+    .app-header { display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; padding: 20px 20px 12px; gap: 8px; }
+    .app-header h2 { font-size: 17px; text-align: center; margin: 0; font-weight: 600; }
+    .circle { background: var(--surface); border: 0; border-radius: 50%; width: 44px; height: 44px; display: grid; place-items: center; box-shadow: var(--raised); }
+    .circle:active, .secondary:active { box-shadow: var(--inset); }
+    svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+    .stepper { padding: 14px 12px 24px; display: flex; list-style: none; margin: 0; }
+    .stepper li { flex: 1; position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: .625rem; color: var(--muted); }
+    .stepper li::before { content: ""; position: absolute; top: 15px; height: 1px; background: #d3c8bc; left: -50%; right: 50%; }
+    .stepper li:first-child::before { display: none; }
+    .dot { position: relative; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--surface); font-size: 12px; box-shadow: 2px 2px 5px #d5cec5, -2px -2px 5px #fffaf3; }
+    .done .dot { background: var(--accent); color: #fff8f0; box-shadow: none; }
+    .done .dot svg { width: 16px; }
+    .stepper .current { color: var(--accent); font-weight: 600; }
+    .stepper .current > span:last-child { color: var(--accent-hover); }
+    .current .dot { box-shadow: var(--inset); }
+    .current::before { background: var(--accent) !important; }
+    .form-card { border-radius: 22px; margin: 0 18px; padding: 20px 18px 24px; box-shadow: var(--panel); }
+    .section-head { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+    .section-head > svg { color: var(--accent); width: 22px; height: 22px; }
+    .section-head h3 { flex: 1; font-size: 17px; margin: 0; font-weight: 600; }
+    .help { width: 36px; height: 36px; position: relative; font-size: 15px; color: var(--muted); }
+    .help::before { content: ""; position: absolute; inset: -4px; }
+    .fields { display: grid; gap: 22px; }
+    .name-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    label, legend { display: block; font-size: 15px; font-weight: 500; margin-bottom: 4px; }
+    .paper-label { display: block; color: var(--muted); font-size: .6875rem; line-height: 1.5; margin: 0 0 9px; letter-spacing: .025em; }
+    .well { width: 100%; height: 48px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); padding: 0 14px; box-shadow: var(--inset); font-size: 16px; min-width: 0; outline: none; }
+    input.well { letter-spacing: .04em; }
+    .well:focus { border-color: var(--accent); }
+    .well[aria-invalid="true"] { border-color: var(--error); }
+    .date-fields { display: flex; align-items: flex-start; gap: 10px; }
+    .date-fields label { width: 62px; text-align: center; color: var(--muted); font-size: .6875rem; font-weight: 400; margin: 0; }
+    .date-fields label:last-child { width: 96px; }
+    .date-fields input { text-align: center; padding: 0 6px; margin-bottom: 7px; }
+    .date-fields > span { padding-top: 13px; font-size: 17px; color: #9e8e7c; }
+    fieldset { padding: 0; border: 0; margin: 0; min-width: 0; }
+    .country-button { display: flex; align-items: center; gap: 8px; text-align: left; }
+    .country-button span:first-child { flex: 1; }
+    .country-button small { font-size: .6875rem; color: var(--muted); margin-left: 6px; }
+    .country-button svg { width: 17px; color: var(--muted); }
+    .hint { font-size: .6875rem; color: var(--muted); line-height: 1.7; margin: 8px 0 0; }
+    .error-copy { color: var(--error); display: flex; align-items: flex-start; gap: 6px; }
+    .error-copy svg { width: 14px; height: 14px; margin-top: 3px; }
+    .fix { background: transparent; border: 0; color: var(--error); font-size: 12px; min-height: 44px; padding: 4px 0; text-decoration: underline; text-underline-offset: 4px; }
+    .footer { padding: 24px 20px 18px; display: grid; grid-template-columns: 94px 1fr; gap: 16px; background: var(--surface); }
+    .footer button { min-height: 50px; border: 0; border-radius: 26px; font-size: 14px; font-weight: 600; }
+    .secondary { background: var(--surface); box-shadow: var(--raised); }
+    .primary { background: var(--accent); color: #fff7ee; box-shadow: 4px 5px 10px #c5ad9b, -3px -3px 8px #fff8ee; display: flex; justify-content: center; align-items: center; gap: 12px; }
+    .primary:hover { background: #994327; }
+    .primary:active { transform: translateY(1px); box-shadow: 1px 2px 4px #bfa48f; }
+    .prototype-note { margin: 0; padding: 0 16px 16px; text-align: center; font-size: .625rem; color: var(--muted); }
+    dialog { color: var(--ink); background: var(--surface); border: 0; border-radius: 24px; padding: 24px; width: min(360px, calc(100% - 32px)); box-shadow: var(--panel); }
+    dialog::backdrop { background: #30251e55; }
+    dialog h3 { margin: 0 0 16px; font-size: 18px; }
+    dialog p { font-size: 14px; line-height: 1.8; }
+    dialog .close { border: 0; min-height: 44px; padding: 8px 20px; border-radius: 24px; background: var(--accent); color: #fff7ee; margin-top: 16px; }
+    .country-list { list-style: none; padding: 12px 0 0; margin: 0; max-height: 250px; overflow: auto; }
+    .country-list button { border: 0; background: transparent; width: 100%; min-height: 48px; text-align: left; border-bottom: 1px solid #d4cabf; font-size: 14px; }
+    .country-list button:hover { color: var(--accent); }
+    .review-list { margin: 0; }
+    .review-list div { margin: 16px 0; }
+    .review-list dt { font-size: 12px; color: var(--muted); }
+    .review-list dd { font-size: 15px; margin: 4px 0 0; overflow-wrap: anywhere; }
+    @media (min-width: 761px) { .phone { width: 390px; } }
+    @media (max-width: 760px) {
+      :root { background: var(--surface); }
+      .studio { display: flex; flex-direction: column; padding: 0; gap: 0; min-height: 0; }
+      .notes { width: 100%; padding: 12px 20px; border-bottom: 1px solid #d9d0c5; }
+      .notes > :not(.demo-controls) { display: none; }
+      .demo-controls { justify-content: center; gap: 8px; }
+      .demo-controls button { min-height: 44px; font-size: 12px; padding: 6px 12px; }
+      .phone { width: 100%; max-width: 430px; border-radius: 0; box-shadow: none; }
+      .app-header { padding-top: 18px; }
+      .footer { position: sticky; bottom: 0; z-index: 2; padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+    }
+    @media (max-width: 350px) {
+      .form-card { margin: 0 12px; padding: 18px 14px 22px; }
+      .section-head h3 { font-size: 16px; }
+      .name-row { gap: 12px; }
+      .paper-label { font-size: .625rem; }
+      .stepper li { font-size: 9px; }
+      .footer { padding-left: 16px; padding-right: 16px; gap: 12px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      button { transition: background-color .15s ease-out, transform .15s ease-out; }
+      .well { transition: border-color .15s ease-out; }
+    }
+  </style>
+</head>
+<body>
+<div class="studio">
+  <aside class="notes">
+    <span class="eyebrow">居留填表助手 / 视觉探索 01</span>
+    <h1>柔和的触感，<br>清楚的边界。</h1>
+    <p>沿用暖米色与赤陶色，让表单像从同一块柔软的材质里塑形。</p>
+    <dl>
+      <div><dt>输入框向内，按钮向外</dt><dd>统一左上光源，用浅阴影区分操作。</dd></div>
+      <div><dt>普通状态不加硬描边</dt><dd>只在聚焦和出错时出现一条细线。</dd></div>
+      <div><dt>大面板轻，小控件清晰</dt><dd>减少层层浮起的厚重感，保留填表的秩序。</dd></div>
+    </dl>
+    <div class="demo-controls" aria-label="预览状态">
+      <button type="button" id="normal" aria-pressed="true">普通状态</button>
+      <button type="button" id="focus-demo" aria-pressed="false">聚焦状态</button>
+      <button type="button" id="error-demo" aria-pressed="false">报错状态</button>
+    </div>
+    <p class="fine">可直接输入、选择国家和查看帮助。<br>独立视觉原型，资料均为虚构，不会保存。</p>
+  </aside>
+  <main class="phone" data-screen-label="姓名与出生资料">
+    <header class="app-header">
+      <button class="circle" id="back" type="button" aria-label="返回预览说明"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"></path></svg></button>
+      <h2>工作居留续签</h2><span></span>
+    </header>
+    <ol class="stepper" aria-label="填写步骤">
+      <li class="done"><span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8"></path></svg></span><span>申请信息</span></li>
+      <li class="current" aria-current="step"><span class="dot">2</span><span>个人与护照</span></li>
+      <li><span class="dot">3</span><span>住址</span></li>
+      <li><span class="dot">4</span><span>工作与收入</span></li>
+      <li><span class="dot">5</span><span>家属与提交</span></li>
+    </ol>
+    <form id="demo-form" novalidate>
+      <section class="form-card" aria-labelledby="form-title">
+        <div class="section-head">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="3.5"></circle><path d="M5 21v-3a7 7 0 0 1 14 0v3"></path></svg>
+          <h3 id="form-title">姓名与出生资料</h3>
+          <button type="button" class="circle help" id="help" aria-label="姓名与出生资料填写说明">?</button>
+        </div>
+        <div class="fields">
+          <div class="name-row">
+            <div><label for="surname">姓</label><small class="paper-label" id="surname-paper">第 3 栏 · <span lang="it">COGNOME</span></small><input class="well" id="surname" value="ESEMPIO" autocomplete="off" spellcheck="false" aria-describedby="surname-paper" required></div>
+            <div><label for="given-name">名</label><small class="paper-label" id="name-paper">第 4 栏 · <span lang="it">NOME</span></small><input class="well" id="given-name" value="DEMO" autocomplete="off" spellcheck="false" aria-describedby="name-paper" required></div>
+          </div>
+          <fieldset><legend>出生日期</legend><small class="paper-label" id="date-paper">第 34 栏 · <span lang="it">NATO/A IL</span></small>
+            <div class="date-fields">
+              <label><input class="well" id="day" value="15" maxlength="2" inputmode="numeric" aria-label="出生日期：日" required>日</label><span aria-hidden="true">/</span>
+              <label><input class="well" id="month" value="06" maxlength="2" inputmode="numeric" aria-label="出生日期：月" required>月</label><span aria-hidden="true">/</span>
+              <label><input class="well" id="year" value="1990" maxlength="4" inputmode="numeric" aria-label="出生日期：年" required>年</label>
+            </div>
+            <p class="hint error-copy" id="date-error" hidden>请填写有效的日、月、年。</p>
+          </fieldset>
+          <div><label id="country-label">出生国家</label><small class="paper-label" id="country-paper">第 35 栏 · <span lang="it">CODICE STATO NASCITA</span></small>
+            <button type="button" class="well country-button" id="country" aria-haspopup="dialog" aria-labelledby="country-label country-value" aria-describedby="country-paper"><span id="country-value">中国 <small>CHN</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5"></circle><path d="m15 15 5 5"></path></svg></button>
+          </div>
+          <div><label for="city">出生地</label><small class="paper-label" id="city-paper">第 38 栏 · <span lang="it">CITTÀ DI NASCITA</span></small>
+            <input class="well" id="city" value="CITTA DEMO" autocomplete="off" spellcheck="false" aria-describedby="city-paper city-hint" required>
+            <p class="hint" id="city-hint">按护照填写，使用大写字母。</p>
+            <div id="city-error" hidden><p class="hint error-copy"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v6m0 4h.01"></path></svg><span>请使用护照上的拉丁字母，不能填汉字。</span></p><button type="button" class="fix" id="fix">填入示例 CITTA DEMO</button></div>
+          </div>
+          <p class="hint error-copy" id="name-error" hidden>姓名请填写拉丁字母，与护照一致。</p>
+        </div>
+      </section>
+      <footer class="footer"><button class="secondary" type="button" id="previous">上一步</button><button class="primary" type="submit">保存并下一步<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"></path></svg></button></footer>
+    </form>
+    <p class="prototype-note">视觉预览 · 虚构示例 · 不保存资料</p>
+  </main>
+</div>
+<dialog id="help-dialog" aria-labelledby="help-title"><h3 id="help-title">姓名与出生资料</h3><p>请对照护照填写姓名和出生资料。意大利文和栏号用于对应纸质表格。</p><p>这是单页视觉原型。你可以试填、切换字段状态，查看新的边框与阴影效果。示例不代表真实申请资料。</p><button class="close" type="button">知道了</button></dialog>
+<dialog id="country-dialog" aria-labelledby="country-title"><h3 id="country-title">选择出生国家</h3><label for="country-search" class="hint">搜索中文、意大利文或代码</label><input class="well" id="country-search" type="search" placeholder="例如：中国 / CHN" autocomplete="off"><ul class="country-list" id="country-list"></ul><p class="hint" id="empty" hidden>没有匹配的示例选项。</p><p class="hint">原型仅提供 4 个国家演示交互。</p><button class="close" type="button">取消</button></dialog>
+<dialog id="review-dialog" aria-labelledby="review-title"><h3 id="review-title">本页填写预览</h3><dl class="review-list" id="review-list"></dl><p class="hint">演示到此结束，资料没有保存，也没有生成申请。</p><button class="close" type="button">返回修改</button></dialog>
+<script>
+  const $ = (id) => document.getElementById(id);
+  const states = ['normal', 'focus-demo', 'error-demo'];
+  const latin = /^[A-ZÀ-ÖØ-Þ '\-]+$/i;
+  function setCityError(invalid) {
+    $('city').setAttribute('aria-invalid', String(invalid));
+    $('city-error').hidden = !invalid; $('city-hint').hidden = invalid;
+    $('city').setAttribute('aria-describedby', invalid ? 'city-paper city-error' : 'city-paper city-hint');
+  }
+  function selectState(id) {
+    states.forEach((state) => $(state).setAttribute('aria-pressed', String(id === state)));
+    $('city').value = id === 'error-demo' ? '示例城市' : 'CITTA DEMO';
+    setCityError(id === 'error-demo');
+    if (id === 'focus-demo') $('given-name').focus({ preventScroll: true });
+    else if (document.activeElement instanceof HTMLInputElement) document.activeElement.blur();
+  }
+  states.forEach((id) => $(id).addEventListener('click', () => selectState(id)));
+  $('fix').addEventListener('click', () => { selectState('normal'); $('city').focus(); });
+  ['surname', 'given-name', 'city'].forEach((id) => $(id).addEventListener('input', () => {
+    const field = $(id); const start = field.selectionStart; const end = field.selectionEnd;
+    field.value = field.value.toUpperCase(); field.setSelectionRange(start, end);
+    if (id === 'city') setCityError(!latin.test(field.value.trim()));
+    else { field.removeAttribute('aria-invalid'); $('name-error').hidden = true; }
+  }));
+  ['day', 'month', 'year'].forEach((id, index, ids) => $(id).addEventListener('input', () => {
+    $(id).value = $(id).value.replace(/\D/g, '');
+    $('date-error').hidden = true; ids.forEach((part) => $(part).removeAttribute('aria-invalid'));
+    if ($(id).value.length === $(id).maxLength && index < 2) $(ids[index + 1]).focus();
+  }));
+  document.querySelectorAll('dialog .close').forEach((button) => button.addEventListener('click', () => button.closest('dialog').close()));
+  ['help', 'back', 'previous'].forEach((id) => $(id).addEventListener('click', () => $('help-dialog').showModal()));
+  const countries = [ ['中国', 'CHN', 'CINA'], ['意大利', 'ITA', 'ITALIA'], ['法国', 'FRA', 'FRANCIA'], ['德国', 'DEU', 'GERMANIA'] ];
+  let country = countries[0];
+  function renderCountries() {
+    const query = $('country-search').value.trim().toUpperCase();
+    const matches = countries.filter((item) => item.join(' ').includes(query));
+    $('country-list').replaceChildren(); $('empty').hidden = matches.length !== 0;
+    matches.forEach((item) => {
+      const li = document.createElement('li'); const button = document.createElement('button');
+      button.type = 'button'; button.textContent = item[0] + ' · ' + item[1];
+      button.addEventListener('click', () => {
+        country = item; $('country-value').replaceChildren(document.createTextNode(item[0] + ' '));
+        const code = document.createElement('small'); code.textContent = item[1]; $('country-value').append(code); $('country-dialog').close();
+      }); li.append(button); $('country-list').append(li);
+    });
+  }
+  $('country').addEventListener('click', () => { $('country-search').value = ''; renderCountries(); $('country-dialog').showModal(); $('country-search').focus(); });
+  $('country-search').addEventListener('input', renderCountries);
+  $('demo-form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    let firstInvalid;
+    for (const id of ['surname', 'given-name']) {
+      const invalid = !latin.test($(id).value.trim()); $(id).setAttribute('aria-invalid', String(invalid));
+      if (invalid) { firstInvalid ||= $(id); $(id).setAttribute('aria-describedby', 'name-error'); }
+    }
+    $('name-error').hidden = !firstInvalid;
+    const day = Number($('day').value), month = Number($('month').value), year = Number($('year').value);
+    const date = new Date(year, month - 1, day);
+    const dateValid = year >= 1900 && date.getFullYear() === year && date.getMonth() === month - 1 && date.getDate() === day && date <= new Date();
+    $('date-error').hidden = dateValid;
+    ['day', 'month', 'year'].forEach((id) => { $(id).setAttribute('aria-invalid', String(!dateValid)); $(id).setAttribute('aria-describedby', dateValid ? 'date-paper' : 'date-paper date-error'); });
+    if (!dateValid) firstInvalid ||= $('day');
+    const cityInvalid = !latin.test($('city').value.trim()); setCityError(cityInvalid);
+    if (cityInvalid) firstInvalid ||= $('city');
+    if (firstInvalid) { firstInvalid.focus(); return; }
+    $('review-list').replaceChildren();
+    [['姓名', $('surname').value + ' ' + $('given-name').value], ['出生日期', `${day} / ${month} / ${year}`], ['出生国家', country[0] + ' · ' + country[1]], ['出生地', $('city').value]].forEach(([label, value]) => {
+      const div = document.createElement('div'), dt = document.createElement('dt'), dd = document.createElement('dd');
+      dt.textContent = label; dd.textContent = value; div.append(dt, dd); $('review-list').append(div);
+    }); $('review-dialog').showModal();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "table": "motivi",
+  "source": "official/2026-11-05_Informativa_Generale.pdf",
+  "note": "以 portaleimmigrazione.it/ITA/tabellauffpostali.html（2024-05-30）为准；25 仅见于 PDF，34/35 仅见于网页。",
+  "entries": [
+    {
+      "code": "02",
+      "nameIt": "Affidamento",
+      "nameZh": "寄养 / 监护托付"
+    },
+    {
+      "code": "03",
+      "nameIt": "Aggiornamento carta di soggiorno (cambio domicilio, stato civile, inserimento figli, cambio passaporto, aggiornamento foto)",
+      "nameZh": "更新居留卡（长居）：换住址、婚姻状况、加子女、换护照、更新照片"
+    },
+    {
+      "code": "04",
+      "nameIt": "Aggiornamento permesso di soggiorno (cambio domicilio, stato civile, inserimento figli, cambio passaporto)",
+      "nameZh": "更新居留许可：换住址、婚姻状况、加子女、换护照"
+    },
+    {
+      "code": "05",
+      "nameIt": "Attesa occupazione",
+      "nameZh": "等待就业"
+    },
+    {
+      "code": "06",
+      "nameIt": "Attesa acquisto cittadinanza",
+      "nameZh": "等待入籍"
+    },
+    {
+      "code": "07",
+      "nameIt": "Asilo rinnovo",
+      "nameZh": "庇护续签"
+    },
+    {
+      "code": "09",
+      "nameIt": "Permesso di soggiorno UE per soggiornanti di lungo periodo",
+      "nameZh": "欧盟长期居留"
+    },
+    {
+      "code": "10",
+      "nameIt": "Conversione permesso di soggiorno",
+      "nameZh": "居留转换"
+    },
+    {
+      "code": "11",
+      "nameIt": "Duplicato Carta di soggiorno",
+      "nameZh": "补发居留卡（长居）"
+    },
+    {
+      "code": "12",
+      "nameIt": "Duplicato Permesso di soggiorno",
+      "nameZh": "补发居留许可"
+    },
+    {
+      "code": "13",
+      "nameIt": "Famiglia",
+      "nameZh": "家庭"
+    },
+    {
+      "code": "14",
+      "nameIt": "Famiglia minore",
+      "nameZh": "家庭（未成年人 14–18 岁）"
+    },
+    {
+      "code": "15",
+      "nameIt": "Lavoro Autonomo",
+      "nameZh": "自雇工作"
+    },
+    {
+      "code": "16",
+      "nameIt": "Lavoro Subordinato",
+      "nameZh": "雇佣工作"
+    },
+    {
+      "code": "17",
+      "nameIt": "Lavoro casi particolari previsti art.27 Testo Unico Immigrazione",
+      "nameZh": "特殊工作类别（移民法第 27 条）"
+    },
+    {
+      "code": "18",
+      "nameIt": "Lavoro subordinato-stagionale",
+      "nameZh": "季节性雇佣工作"
+    },
+    {
+      "code": "19",
+      "nameIt": "Missione",
+      "nameZh": "公务派遣"
+    },
+    {
+      "code": "20",
+      "nameIt": "Motivi Religiosi",
+      "nameZh": "宗教事由"
+    },
+    {
+      "code": "21",
+      "nameIt": "Residenza elettiva",
+      "nameZh": "选择性居留"
+    },
+    {
+      "code": "23",
+      "nameIt": "Status apolidia rinnovo",
+      "nameZh": "无国籍身份续签"
+    },
+    {
+      "code": "24",
+      "nameIt": "Motivi di Studio (art.39 TUI)",
+      "nameZh": "学习（移民法第 39 条）"
+    },
+    {
+      "code": "25",
+      "nameIt": "Tirocinio formazione professionale",
+      "nameZh": "职业培训实习",
+      "note": "仅见于说明书 PDF（Ed.10/20），官网 2024 版已删除"
+    },
+    {
+      "code": "27",
+      "nameIt": "Ricercatore (art. 27 ter TUI)",
+      "nameZh": "研究人员（第 27 条之三）"
+    },
+    {
+      "code": "28",
+      "nameIt": "Ricercatore - Ricerca lavoro (art.27 ter TUI)",
+      "nameZh": "研究人员：找工作 / 创业"
+    },
+    {
+      "code": "29",
+      "nameIt": "Ricercatore - Mobilità (art.27 ter TUI)",
+      "nameZh": "研究人员：流动"
+    },
+    {
+      "code": "30",
+      "nameIt": "Studente - Ricerca lavoro (art.39 bis.1 TUI)",
+      "nameZh": "学生：毕业后找工作 / 创业"
+    },
+    {
+      "code": "31",
+      "nameIt": "Studente (art.39 bis TUI)",
+      "nameZh": "学生（第 39 条之二）"
+    },
+    {
+      "code": "32",
+      "nameIt": "Alunno (art.39 bis TUI)",
+      "nameZh": "中小学生（第 39 条之二）"
+    },
+    {
+      "code": "33",
+      "nameIt": "Tirocinante (art.39 bis TUI)",
+      "nameZh": "实习生（第 39 条之二）"
+    },
+    {
+      "code": "34",
+      "nameIt": "Familiare cittadino italiano",
+      "nameZh": "意大利公民家属",
+      "note": "仅见于官网 2024 版"
+    },
+    {
+      "code": "35",
+      "nameIt": "Carta di soggiorno elettronica familiare cittadino UE",
+      "nameZh": "欧盟公民家属电子居留卡",
+      "note": "仅见于官网 2024 版"
+    }
+  ]
+}

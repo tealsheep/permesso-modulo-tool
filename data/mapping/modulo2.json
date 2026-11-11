@@ -1,0 +1,711 @@
+{
+  "form": "modulo2",
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "rules": [
+    {
+      "field": "M2-H01",
+      "value": {
+        "path": "questura.city"
+      }
+    },
+    {
+      "field": "M2-H02",
+      "value": {
+        "path": "questura.province"
+      }
+    },
+    {
+      "field": "M2-004",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato"
+        }
+      }
+    },
+    {
+      "field": "M2-005",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-006",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "altro"
+        }
+      }
+    },
+    {
+      "field": "M2-008",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "work.contract": "indeterminato"
+        }
+      }
+    },
+    {
+      "field": "M2-009",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "work.contract": "determinato"
+        }
+      }
+    },
+    {
+      "field": "M2-010",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "work.contract": "stagionale"
+        }
+      }
+    },
+    {
+      "field": "M2-011",
+      "value": {
+        "path": "work.contractMonths"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "work.contract": [
+            "determinato",
+            "stagionale"
+          ]
+        }
+      }
+    },
+    {
+      "field": "M2-012",
+      "value": {
+        "path": "work.contractOther"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "work.contract": "altro"
+        }
+      }
+    },
+    {
+      "field": "M2-013",
+      "value": {
+        "path": "work.contractDays"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato"
+        }
+      }
+    },
+    {
+      "field": "M2-015",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo",
+          "work.autonomoForm": "titolare"
+        }
+      }
+    },
+    {
+      "field": "M2-016",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo",
+          "work.autonomoForm": "socio"
+        }
+      }
+    },
+    {
+      "field": "M2-017",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo",
+          "work.autonomoForm": "libero"
+        }
+      }
+    },
+    {
+      "field": "M2-018",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo",
+          "work.autonomoForm": "altro"
+        }
+      }
+    },
+    {
+      "field": "M2-019",
+      "value": {
+        "path": "work.jobTitle"
+      }
+    },
+    {
+      "field": "M2-021",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "giuridica"
+        }
+      }
+    },
+    {
+      "field": "M2-022",
+      "value": {
+        "path": "employer.name"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "giuridica"
+        }
+      }
+    },
+    {
+      "field": "M2-023",
+      "value": {
+        "path": "employer.codiceFiscale"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "giuridica"
+        }
+      }
+    },
+    {
+      "field": "M2-024",
+      "value": {
+        "path": "employer.partitaIva"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "giuridica"
+        }
+      }
+    },
+    {
+      "field": "M2-025",
+      "value": {
+        "path": "employer.inps"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "giuridica"
+        }
+      }
+    },
+    {
+      "field": "M2-026",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "fisica"
+        }
+      }
+    },
+    {
+      "field": "M2-027",
+      "value": {
+        "path": "employer.permitNumber"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "fisica"
+        }
+      }
+    },
+    {
+      "field": "M2-028",
+      "value": {
+        "path": "employer.surname"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "fisica"
+        }
+      }
+    },
+    {
+      "field": "M2-029",
+      "value": {
+        "path": "employer.givenNames"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "fisica"
+        }
+      }
+    },
+    {
+      "field": "M2-030",
+      "value": {
+        "path": "employer.birthDate"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "fisica"
+        }
+      }
+    },
+    {
+      "field": "M2-031",
+      "value": {
+        "path": "employer.codiceFiscale"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "fisica"
+        }
+      }
+    },
+    {
+      "field": "M2-032",
+      "value": {
+        "path": "employer.partitaIva"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "employer.kind": "fisica"
+        }
+      }
+    },
+    {
+      "field": "M2-034",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "work.contrattoSoggiornoStatus": "same-employer",
+          "contrattoSoggiorno.mode": "sottoscritto"
+        }
+      }
+    },
+    {
+      "field": "M2-035",
+      "value": {
+        "path": "contrattoSoggiorno.province"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "work.contrattoSoggiornoStatus": "same-employer",
+          "contrattoSoggiorno.mode": "sottoscritto"
+        }
+      }
+    },
+    {
+      "field": "M2-036",
+      "value": {
+        "path": "contrattoSoggiorno.date"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "work.contrattoSoggiornoStatus": "same-employer",
+          "contrattoSoggiorno.mode": "sottoscritto"
+        }
+      }
+    },
+    {
+      "field": "M2-037",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "contrattoSoggiorno.mode": "inviato"
+        }
+      }
+    },
+    {
+      "field": "M2-038",
+      "value": {
+        "path": "contrattoSoggiorno.province"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "contrattoSoggiorno.mode": "inviato"
+        }
+      }
+    },
+    {
+      "field": "M2-039",
+      "value": {
+        "parts": {
+          "numero": {
+            "path": "contrattoSoggiorno.raccomandata.numero"
+          },
+          "controllo": {
+            "path": "contrattoSoggiorno.raccomandata.controllo"
+          }
+        }
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "contrattoSoggiorno.mode": "inviato"
+        }
+      }
+    },
+    {
+      "field": "M2-040",
+      "value": {
+        "path": "contrattoSoggiorno.date"
+      },
+      "when": {
+        "equals": {
+          "work.type": "subordinato",
+          "contrattoSoggiorno.mode": "inviato"
+        }
+      }
+    },
+    {
+      "field": "M2-042",
+      "value": {
+        "path": "business.name"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-043",
+      "value": {
+        "path": "business.codiceFiscale"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-044",
+      "value": {
+        "path": "business.partitaIva"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-045",
+      "value": {
+        "path": "business.inps"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-046",
+      "value": {
+        "path": "business.cciaaProvince"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-047",
+      "value": {
+        "path": "business.cciaaNumber"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-048",
+      "value": {
+        "path": "business.cciaaDate"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-049",
+      "value": {
+        "path": "business.albo"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-050",
+      "value": {
+        "path": "business.alboDate"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo"
+        }
+      }
+    },
+    {
+      "field": "M2-052",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "present": [
+          "income.annualCents"
+        ]
+      }
+    },
+    {
+      "field": "M2-053",
+      "value": {
+        "parts": {
+          "euro": {
+            "computed": "income.annual.euro"
+          },
+          "centesimi": {
+            "computed": "income.annual.cents"
+          }
+        }
+      },
+      "when": {
+        "present": [
+          "income.annualCents"
+        ]
+      }
+    },
+    {
+      "field": "M2-054",
+      "value": {
+        "path": "income.lastTaxYear"
+      }
+    },
+    {
+      "field": "M2-055",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "income.taxForm": "unico-pf"
+        }
+      }
+    },
+    {
+      "field": "M2-056",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "income.taxForm": "unico-sp"
+        }
+      }
+    },
+    {
+      "field": "M2-057",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "income.taxForm": "unico-sc"
+        }
+      }
+    },
+    {
+      "field": "M2-058",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "income.taxForm": "unico-enc"
+        }
+      }
+    },
+    {
+      "field": "M2-059",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "income.taxForm": "cud"
+        }
+      }
+    },
+    {
+      "field": "M2-060",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "income.bustaPaga": true
+        }
+      }
+    },
+    {
+      "field": "M2-061",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "income.bollettinoInps": true
+        }
+      }
+    },
+    {
+      "field": "M2-062",
+      "value": {
+        "parts": {
+          "euro": {
+            "computed": "income.monthly.euro"
+          },
+          "centesimi": {
+            "computed": "income.monthly.cents"
+          }
+        }
+      },
+      "when": {
+        "present": [
+          "income.monthlyCents"
+        ]
+      }
+    },
+    {
+      "field": "M2-063",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "work.type": "autonomo",
+          "income.autonomoStartedThisYear": true
+        }
+      }
+    },
+    {
+      "field": "M2-065",
+      "value": {
+        "path": "employmentCentre.registrationDate"
+      },
+      "when": {
+        "applicationCodes": [
+          "05",
+          "30",
+          "28"
+        ]
+      }
+    },
+    {
+      "field": "M2-066",
+      "value": {
+        "path": "employmentCentre.province"
+      },
+      "when": {
+        "applicationCodes": [
+          "05",
+          "30",
+          "28"
+        ]
+      }
+    },
+    {
+      "field": "M2-067",
+      "value": {
+        "path": "employmentCentre.city"
+      },
+      "when": {
+        "applicationCodes": [
+          "05",
+          "30",
+          "28"
+        ]
+      }
+    },
+    {
+      "field": "M2-068",
+      "value": {
+        "path": "employmentCentre.circoscrizione"
+      },
+      "when": {
+        "applicationCodes": [
+          "05",
+          "30",
+          "28"
+        ]
+      }
+    }
+  ]
+}

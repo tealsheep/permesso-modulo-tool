@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "13",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1)",
+      "nameZh": "填好并签名的申请表（Modulo 1）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Dichiarazione del familiare di provvedere al sostentamento del componente il suo nucleo familiare",
+      "nameZh": "担保家属的声明：表示负担你的生活费用",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Certificazione Unica (CU) o dichiarazione dei redditi del familiare",
+      "nameZh": "担保家属的 CU 或报税单（证明收入）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno del familiare",
+      "nameZh": "担保你的家属的居留许可 / 居留卡复印件",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Certificato di stato di famiglia (o autocertificazione)",
+      "nameZh": "家庭状况证明（stato di famiglia，或自我声明）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Contratto di locazione o dichiarazione di ospitalità",
+      "nameZh": "租房合同或住宿证明（ospitalità）",
+      "basis": "common"
+    }
+  ]
+}

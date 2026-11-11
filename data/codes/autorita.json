@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "table": "autorita",
+  "source": "official/2026-11-05_Informativa_Generale.pdf",
+  "entries": [
+    {
+      "code": "01",
+      "nameIt": "GOVERNO",
+      "nameZh": "政府"
+    },
+    {
+      "code": "02",
+      "nameIt": "RAPPRESENTANZA DIPLOMATICA / CONSOLARE DELLO STATO DI APPARTENENZA ALL'ESTERO",
+      "nameZh": "本国驻外使领馆（意大利以外）"
+    },
+    {
+      "code": "03",
+      "nameIt": "RAPPRESENTANZA DIPLOMATICA / CONSOLARE DELLO STATO DI APPARTENENZA IN ITALIA",
+      "nameZh": "本国驻意大利使领馆"
+    },
+    {
+      "code": "04",
+      "nameIt": "RAPPRESENTANZA DIPLOMATICA / CONSOLARE PRESSO LO STATO DELLA CITTÀ DEL VATICANO",
+      "nameZh": "本国驻梵蒂冈使领馆"
+    },
+    {
+      "code": "05",
+      "nameIt": "ONU – LASCIAPASSARE PROPRI DIRIGENTI",
+      "nameZh": "联合国（官员通行证）"
+    },
+    {
+      "code": "06",
+      "nameIt": "QUESTURA",
+      "nameZh": "警察局（Questura）"
+    }
+  ]
+}

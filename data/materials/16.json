@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "16",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1 e 2)",
+      "nameZh": "填好并签名的申请表（Modulo 1 和 2）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Fotocopia delle ultime buste paga",
+      "nameZh": "最近几个月的工资单复印件",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "work.hiredThisYear": true
+        }
+      }
+    },
+    {
+      "nameIt": "Contratto di lavoro / comunicazione obbligatoria (UNILAV)",
+      "nameZh": "劳动合同 / 雇佣登记（UNILAV）。换过雇主的，新雇主的 UNILAV 代替居留合同",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Certificazione Unica (CU) o dichiarazione dei redditi dell'anno precedente",
+      "nameZh": "上一年度 CU 或报税单",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Contratto di locazione o dichiarazione di ospitalità",
+      "nameZh": "租房合同或住宿证明（ospitalità）",
+      "basis": "common"
+    }
+  ]
+}

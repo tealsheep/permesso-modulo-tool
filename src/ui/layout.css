@@ -1,0 +1,60 @@
+/* D43 placement and D44 approved readability use the existing D42 tokens. */
+.desktop-left,.desktop-right,.reference-thumbnails { display:none; }
+.home-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:0 0 20px; }
+.home-heading .home-title { margin:0; }
+.home-heading .primary { white-space:nowrap; }
+.person-applications { margin-top:24px; }
+.person-heading { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:12px; }
+.person-heading small { display:inline; font-weight:400; }
+.fields>.phone-field { grid-column:1 / -1; }
+.application-row { display:flex; flex-wrap:wrap; }
+.application-row>span:first-child { flex:1 1 150px; }
+.application-row .row-progress { flex:0 0 auto; }
+.row-date { flex:1 1 100%; font-size:.6875rem; color:var(--muted); }
+.detail-actions { display:flex; flex-wrap:wrap; gap:12px; }
+.detail-actions>* { flex:1; }
+.focus-paper { position:relative; }
+@media(max-width:767px) { .fields { grid-template-columns:1fr; } }
+.focus-paper canvas { width:100%; display:block; }
+.focus-paper svg { position:absolute; inset:0; width:100%; height:100%; fill:transparent; stroke:var(--accent); stroke-width:2; }
+.vertical-steps { display:flex; flex-direction:column; gap:12px; margin-top:24px; }
+.vertical-steps button { text-align:left; width:100%; }
+.vertical-steps [aria-current],.desktop-left>nav [aria-current] { color:var(--accent-hover); font-weight:600; box-shadow:var(--inset); border-radius:var(--radius-input); }
+.vertical-steps a { display:block; font-size:13px; padding:8px 12px; }
+@media(min-width:768px) {
+  .app-shell,.app-shell.preview-shell { max-width:none; display:grid; grid-template-columns:232px minmax(0,1fr); column-gap:24px; padding:24px; align-items:start; }
+  .app-shell main { padding:0 0 140px; min-width:0; max-width:720px; width:100%; justify-self:center; }
+  .desktop-left { display:flex; flex-direction:column; gap:24px; position:sticky; top:24px; height:calc(100dvh - 48px); overflow:auto; grid-column:1; grid-row:1; }
+  .desktop-left>.hint { margin-top:auto; }
+  .home-shell main>.brand { display:none; }
+  .desktop-left>nav:not(.vertical-steps) { display:flex; flex-direction:column; align-items:stretch; }
+  .desktop-left button { text-align:left; }
+  .app-shell>.bottom-nav,.form-shell .stepper { display:none; }
+  .app-shell .bottom-bar,.preview-shell .bottom-bar { left:280px; transform:none; width:calc(100% - 304px); justify-content:flex-end; }
+  .form-actions>.primary { flex:0 1 240px; }
+  .form-shell .form-actions { background:var(--surface); }
+  /* Two columns only when the card is wide enough; the middle column is narrow at ~1024px with the preview open. */
+  @container (min-width:440px) { .form-shell .fields { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  .form-shell .field:has(.date-field) { grid-column:1 / -1; }
+  .reference-thumbnails { display:flex; flex-direction:column; gap:12px; position:fixed; top:200px; left:24px; width:232px; height:calc(100dvh - 260px); overflow:auto; z-index:4; background:var(--surface); }
+  .reference-thumbnails button { flex:0 0 auto; padding:12px; border-radius:var(--radius-input); }
+  .reference-thumbnails [aria-current] { box-shadow:var(--inset); color:var(--accent); }
+  .reference-thumbnails canvas { width:100%; height:auto; display:block; }
+}
+@media(min-width:1024px) {
+  .home-shell,.form-shell { grid-template-columns:232px minmax(0,1fr) 360px; }
+  .desktop-right { display:block; grid-column:3; grid-row:1; min-width:0; position:sticky; top:24px; max-height:calc(100dvh - 48px); overflow:auto; }
+  .paper-focus { padding:0; }
+  .paper-focus .card { margin:0 0 24px; }
+  .form-shell .bottom-bar { width:calc(100% - 688px); }
+  .home-shell .application-row { display:grid; grid-template-columns:minmax(0,1fr) auto; }
+  .home-shell .row-date { grid-column:1 / -1; }
+  .home-shell .application-row[data-selected=true] { border:1px solid var(--accent); box-shadow:var(--inset); }
+}
+@media(min-width:1280px) {
+  .form-shell .field:has(.date-field) { grid-column:auto; }
+  .home-shell .application-row { grid-template-columns:minmax(0,1fr) 40px 106px 64px 20px; gap:8px; padding:16px 12px; }
+  .home-shell .application-row>span:first-child { min-width:0; }
+  .home-shell .row-date { grid-column:auto; }
+  .home-shell .row-date .date-caption { display:block; }
+}

@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "inputHash": "c03e7105b0a89a2e2d30f7db7df342395f37367749f4072c978a75350903b929",
+  "sourceHash": "a6f612dd00283e84125e23febb7f29c5a73e3527ac7192db83e1ea7e87e463ed",
+  "sourceBytes": 10596272,
+  "outputHash": "b796b6b8eb701024a0a906263f5149148b6df3d419e0d67289d1cb5c35eaba6a",
+  "outputBytes": 338592,
+  "characters": 1611,
+  "inputs": [
+    {
+      "path": "data/application-types.json",
+      "hash": "8e306bb1688569a618803aa90cd7208ddd613bea7a0c26f1f050a3e3663cac45"
+    },
+    {
+      "path": "data/codes/autorita.json",
+      "hash": "cfa6c7f69eaa99c0589f9c86217abf1eb07b68ac97e1e22e92c8cfca5413b738"
+    },
+    {
+      "path": "data/codes/documenti.json",
+      "hash": "e959adb221ee456e6e477c23b0f040949dbb2aedd45a938eedc30194bcfd01c1"
+    },
+    {
+      "path": "data/codes/motivi.json",
+      "hash": "f53698b391866a75a1ec541d44de95cc384ede35c5f1958c3ca08e4da4d874e8"
+    },
+    {
+      "path": "data/codes/provinces.json",
+      "hash": "925875f1b877ff324270db8d5a42293fdf32326cd431c5ea49b3823e04a24f4b"
+    },
+    {
+      "path": "data/codes/questure.json",
+      "hash": "156c5694ba0864e8d297b49681b1733403f76029e27d30b2b68b701bc355c972"
+    },
+    {
+      "path": "data/codes/stati.json",
+      "hash": "693f9ac65dbd44ea645a8b1898a76dbf3bd41af2c516e6264dffd9ec5c5e749b"
+    },
+    {
+      "path": "data/fees.json",
+      "hash": "0d7e6753c7d1488a4048a6d2b38f57c0e33bce39f28d2babd189208c7e5b2a60"
+    },
+    {
+      "path": "data/forms/bollettino.json",
+      "hash": "147456f725860ed7d29d71502498f42dddc70e121127da9ed110379009573d1d"
+    },
+    {
+      "path": "data/forms/modulo1.json",
+      "hash": "9516f318d0696604dc8f718d3688288d5635b1d906d8259fb8a1af2b9ab71e11"
+    },
+    {
+      "path": "data/forms/modulo2-layout.json",
+      "hash": "f53486cf6f3da9d361bb38418d9f781e57c43392d5bd03482387342863c60a57"
+    },
+    {
+      "path": "data/forms/modulo2.json",
+      "hash": "39c78acd2e8811494e1262cb489825b3150b2e509edd98577f388155a8cc3def"
+    },
+    {
+      "path": "data/mapping/bollettino.json",
+      "hash": "8ec6cc1b89d45ec90e681f0a944bd64c501e81d5bcf11a5a62d101855e5ae634"
+    },
+    {
+      "path": "data/mapping/modulo1.json",
+      "hash": "def8fc4021aa897981fe9049826f700ecfc444b5c4c2bbcdc591005f5c4fd686"
+    },
+    {
+      "path": "data/mapping/modulo2.json",
+      "hash": "1609e35b929579a5f2e39700c464ee91911302140003966843e43f005a8d5c56"
+    },
+    {
+      "path": "data/materials/02.json",
+      "hash": "a3d0a1b75c2982b42c2c6024190bf62dc7b08535c955f428ddcdef5b4069ef96"
+    },
+    {
+      "path": "data/materials/03.json",
+      "hash": "438301ad2a017e566824b31135719a4831b2414d96725c92a3887da3fd8c6434"
+    },
+    {
+      "path": "data/materials/04.json",
+      "hash": "5496fddfa1c2306e3e8d91effae573b6ed5906fcce6d023c211b80413f8b8a1a"
+    },
+    {
+      "path": "data/materials/05.json",
+      "hash": "829ac2bee4d4619bb09e89304347aaf5d3db7ccf14780806efc610aa91b450c5"
+    },
+    {
+      "path": "data/materials/06.json",
+      "hash": "a40c7a7f3fe78da82e9ea412e7fbd6eee6cc836c5689d4ffe670befedb866e1f"
+    },
+    {
+      "path": "data/materials/07.json",
+      "hash": "13e8e6cd4bf3327aaab5da4f2b623bbc9c52beed4b95fad2584aad4166545e01"
+    },
+    {
+      "path": "data/materials/09.json",
+      "hash": "c92fcf1bec9596a927536a0870f773a3e25cdfd7cfe95cd6db253e2a98c12491"
+    },
+    {
+      "path": "data/materials/10.json",
+      "hash": "49fb6747a67bbf9e43b511aca40e3d6d5e22239fc8e927064e869ec4405d5a6e"
+    },
+    {
+      "path": "data/materials/11.json",
+      "hash": "6aa321d0f9fe1e3c5cfb352a047c4196878c9e74d98b0b9588ff550951ae1df2"
+    },
+    {
+      "path": "data/materials/12.json",
+      "hash": "1fcc2143940548c5dd3b506c3013217691f63f7d83afb79f3548768624960d9f"
+    },
+    {
+      "path": "data/materials/13.json",
+      "hash": "ef8efcd1ffc4d363f3c3b37b61c48c23b3c02c7cf5df7df473a173998b0b99ef"
+    },
+    {
+      "path": "data/materials/14.json",
+      "hash": "358b6dc3d770bd4bfed82c2ed1a0a410163e5dbe1f487ae2ebca755fc0f2f017"
+    },
+    {
+      "path": "data/materials/15.json",
+      "hash": "412ffaa53916ad7823b46320245810fb541e3ac8c2199483a852280ad6ab8291"
+    },
+    {
+      "path": "data/materials/16.json",
+      "hash": "84f5fbee7a5efdda67279c3ccccdb628f49e0c8cc841de36c4f515c0b7c86dbe"
+    },
+    {
+      "path": "data/materials/17.json",
+      "hash": "588d8b7139b51a1aaf05955f4b207a5a286f998f05db83e836f965ed49040be5"
+    },
+    {
+      "path": "data/materials/18.json",
+      "hash": "971c209919973d5f0351c5780a23f2983be53a235da2a0bc3c581c6eacb2ded0"
+    },
+    {
+      "path": "data/materials/19.json",
+      "hash": "0edce54d8e3c94355e21e3af63f6e89dada53f3db792b0859eb7974cade8a263"
+    },
+    {
+      "path": "data/materials/20.json",
+      "hash": "4b28d676c0e6f78475c92e234e471201619c1920c336c4ab7a191a9da1905232"
+    },
+    {
+      "path": "data/materials/21.json",
+      "hash": "3805dd7aa214a94bd2b93f02a28f2add8f60ebacce941ce5a51b73f353bb8306"
+    },
+    {
+      "path": "data/materials/23.json",
+      "hash": "ed2c74c2685a8d364d83cef1a35fd77933e99630ea1ec5dd280f2352c62a71bb"
+    },
+    {
+      "path": "data/materials/24.json",
+      "hash": "c1c1a06bb46110a6e8d239e2bfbcbd2055bffbb7884940a81fc9ffe7602887ac"
+    },
+    {
+      "path": "data/materials/27.json",
+      "hash": "9fa999d9fcfd6db345d3240ac9e8a6228029ab5d0258b0c64df29c7069099053"
+    },
+    {
+      "path": "data/materials/28.json",
+      "hash": "81e46b58a34abcb503376f1f3983631a9c4b2c98c2e18a43595157da722bf48f"
+    },
+    {
+      "path": "data/materials/29.json",
+      "hash": "97245149e5bd70480c412c56336f9fa0dd989ebb60b4a668d61d2233c66521ad"
+    },
+    {
+      "path": "data/materials/30.json",
+      "hash": "c0cffb5fe12932b6b7699465316bcd2a170d7895a34a17f3d49f99ad5c971d75"
+    },
+    {
+      "path": "data/materials/31.json",
+      "hash": "ae1e9c8b84e8ff837841a4d1c9553d9606278d91c521c980ff78f47db1153ca4"
+    },
+    {
+      "path": "data/materials/32.json",
+      "hash": "9c7ec64256c6bdd674da79c18759f6683a18eeb8302d1a6248469e755e5bc411"
+    },
+    {
+      "path": "data/materials/33.json",
+      "hash": "9a33ebb7d466af435576448befcc6e09a8e5ed287baa19b78500fd659ab23971"
+    },
+    {
+      "path": "data/questions.json",
+      "hash": "4630870e84160cd15db9cbbb0f1bd0acb5d0ab75d8eaacd20e1309f97ee69f26"
+    },
+    {
+      "path": "src/data/application-migration.ts",
+      "hash": "9fedf4ca6c1b1db236c8beb09ad335dca363ba7724632f1512cf129d10fae2df"
+    },
+    {
+      "path": "src/data/application-schema.ts",
+      "hash": "5b50d93b0eb14c9b98a3808136114c6a27223da2508db2bf185cfb3954930f2f"
+    },
+    {
+      "path": "src/data/business.ts",
+      "hash": "62f43547b680947a1523f962328e5fd6aa6a0229b24da10e0295f659c96982ea"
+    },
+    {
+      "path": "src/data/catalog.ts",
+      "hash": "79b9f7ae7944f87414d857f4fe917d6c28df471b6d48bdb0d867d6ab93de1ce8"
+    },
+    {
+      "path": "src/data/layout-schema.ts",
+      "hash": "0fd108b737dbabcf4133da627497abf2e6b59bea0cadda190944aa4eb6158b96"
+    },
+    {
+      "path": "src/data/load.ts",
+      "hash": "c8faafee62f9726a010ca5264348b3384bf10d20226dc2d2a17329861db4cdcc"
+    },
+    {
+      "path": "src/data/mapping-schema.ts",
+      "hash": "1be0a2af2f6c3cd1fd5e919027c4eee15702c43dfc7c20c139e1f6a18d2d328c"
+    },
+    {
+      "path": "src/data/path.ts",
+      "hash": "133a658ea7d12f9f1e4ee6352f32c9d4a1ef80166d7158e1aaa4620dcae868d2"
+    },
+    {
+      "path": "src/data/questions-schema.ts",
+      "hash": "e7a17a492424d63c7d64b06134740fb1522094a9ce4b67a67183a8e0d74aa4e5"
+    },
+    {
+      "path": "src/data/questions.ts",
+      "hash": "5b7cc59db97941d788533d943955c9d2cf9197896ce2925c9347a8e639c11049"
+    },
+    {
+      "path": "src/data/schemas.ts",
+      "hash": "2f020069aad8d9ccdc064805efa2004179c827f4cd34571b756774b27ec749b3"
+    },
+    {
+      "path": "src/demo/additional-forms.ts",
+      "hash": "6da254f2846001453922d303604cc09267bfc0238cedb1fa98830fc1de5cb27e"
+    },
+    {
+      "path": "src/demo/alignment.ts",
+      "hash": "5192d96b1adba8e272ca15ee15ba14d25f56b81bc9e8d35bac17b2334169e47a"
+    },
+    {
+      "path": "src/demo/applications.ts",
+      "hash": "d94c9a4643843afa4a3046efba72e41b57df93ee3b2da7c553878a0dca10e11d"
+    },
+    {
+      "path": "src/demo/c1.ts",
+      "hash": "62f5b98d3fe1bed1035e4da23954e2cc2378b4f9c3efcab2fed2e2fe28a72c0d"
+    },
+    {
+      "path": "src/demo/c2.ts",
+      "hash": "8ae4cd39027d7c0f658600e4df78102fb23d2a3c05af5a993d366c0e7f74896a"
+    },
+    {
+      "path": "src/demo/modulo1.ts",
+      "hash": "26ac61b9f4812c480f7dc93172e370de01be3250cc427a122054ba16d468e83c"
+    },
+    {
+      "path": "src/engine/application.ts",
+      "hash": "fcb52b183ce446010f1271b9c8f925165486f4b1b6330b23071aca963ccf59d9"
+    },
+    {
+      "path": "src/engine/characters.ts",
+      "hash": "9a5968484401a4f4bb709e00f73e8e6d62fc1f778f6e5eff8a44ae2593137842"
+    },
+    {
+      "path": "src/engine/codice-fiscale.ts",
+      "hash": "97b200480fd52b418bbf8bcfddfe7819db1c4a04116aad11abd57eb3149336f6"
+    },
+    {
+      "path": "src/engine/conditions.ts",
+      "hash": "595bbcda42ba5c9879b64447f3d38fa214b63a2105327848613c3f0818d390bf"
+    },
+    {
+      "path": "src/engine/dates.ts",
+      "hash": "b8307fed624ce4ba2b8ae8478caa578b0c050d03558c18103ec990d803c130b1"
+    },
+    {
+      "path": "src/engine/duration.ts",
+      "hash": "021b0fdeaf96551a04316601f1573e32079c5c26cc642fad54835252bd15e5a9"
+    },
+    {
+      "path": "src/engine/input-errors.ts",
+      "hash": "09c8684afb63793aa9cf469ca7f13a7bb3e02315aae28c99fc7ccae46aa71c95"
+    },
+    {
+      "path": "src/engine/italian-money.ts",
+      "hash": "c85bdcf3f874756688377f03a9c0117702e0401a7649d2a2548767a1a7cba6be"
+    },
+    {
+      "path": "src/engine/mapping.ts",
+      "hash": "d6d0787264e7aad9f70d2b2a9613cede4fbcf8588907b1c2844cf0b19e19c033"
+    },
+    {
+      "path": "src/engine/prepare.ts",
+      "hash": "183adb089afa3e72c723bfdd96277192e0845bdf4fdee596be9d963e22572129"
+    },
+    {
+      "path": "src/engine/question-defaults.ts",
+      "hash": "026bfc26d5d0530cf4089efd8074ee9876773705cd2b3e637752022b655ef0b6"
+    },
+    {
+      "path": "src/engine/selection.ts",
+      "hash": "578f26940c729435dfaf23fba0ea9d6e62e07232882b1958582c7363e482dd2b"
+    },
+    {
+      "path": "src/main.tsx",
+      "hash": "81a67185373e0915401a93e2e7c579946440a5a30c71699517af8674125416a7"
+    },
+    {
+      "path": "src/questionnaire/model.ts",
+      "hash": "f6448f3dc7d206d37fbdcb5bf6c5f69fd11c535c4cd5a50e10a32887fc5a4a89"
+    },
+    {
+      "path": "src/questionnaire/projection.ts",
+      "hash": "41a848de52a799dc58c452d469d2f222b1e092cad58898b43390be870e1c3600"
+    },
+    {
+      "path": "src/questionnaire/rule-report.ts",
+      "hash": "13b3cfc967880addffa1f0955d414e9982604e4499529387dac77db54e317d2b"
+    },
+    {
+      "path": "src/render/application.ts",
+      "hash": "33c25163a0eb3da22288a40b4e4a81dc9be72ba614e68932a669f8e6013348f6"
+    },
+    {
+      "path": "src/render/bollettino.ts",
+      "hash": "15d9fc0d94d6183358f977b020df153652d5acc67277a5906e0923308397f104"
+    },
+    {
+      "path": "src/render/font-subset-core.ts",
+      "hash": "05afd0371793f8eca323e073a48b5e850f1a7bf6350435b458d579c69b4a3c86"
+    },
+    {
+      "path": "src/render/font-subset.ts",
+      "hash": "03e5a3ca802222768c8fd7da34aed91d6d089a8ae7f98ac3cf3d32880308c141"
+    },
+    {
+      "path": "src/render/modulo2.ts",
+      "hash": "5043b949bbbf9c6088e09ef7534a9255180455123ad5989d0e40ba88fb6f586e"
+    },
+    {
+      "path": "src/render/overlay.ts",
+      "hash": "9861caf53f20cab962485d01f88cea4bf06e9e6018280fe6a9c2cb26afd0c884"
+    },
+    {
+      "path": "src/render/preview.ts",
+      "hash": "c0b52c1db46985fe6e4232554d8c95dda933909e51309532fd7ba81fe47e4c80"
+    },
+    {
+      "path": "src/render/text-sheets.ts",
+      "hash": "7173083b3840a8634aa130d5f6e5272bf02457e66343e94eae94d2e63bccde02"
+    },
+    {
+      "path": "src/storage/people.ts",
+      "hash": "a5f090bf974320e24e8df01f84748f928ac003d2da441e9cfe7c083e5c9b77fd"
+    },
+    {
+      "path": "src/storage/store.ts",
+      "hash": "79d4aa586b1f52f0686168ac7f166b552c3433647e1348bff2b0352be44979c9"
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "hash": "100be18a92dc78444474a10b017e1de9e45abf5a7d109c32749049f0f98c6efa"
+    },
+    {
+      "path": "src/ui/Applications.tsx",
+      "hash": "23532f23f75e58bcacc0d103c4e8c5deed06dd13841611c50a5f7b2fc5452e77"
+    },
+    {
+      "path": "src/ui/DateInput.tsx",
+      "hash": "51d166e4ad879e054c3c8564170f6c7e3c101632dd1f8a2dd8f63cfae2eb495d"
+    },
+    {
+      "path": "src/ui/Desktop.tsx",
+      "hash": "668bc79c72f3fe6fbd8b992d9b8f8c213dcc25bfa69613b2c724f1888263e9d7"
+    },
+    {
+      "path": "src/ui/Family.tsx",
+      "hash": "70dae690cd15a6e14ce07bfc441f686ef733a0c5ea35f6a2dd1c1c373003cb78"
+    },
+    {
+      "path": "src/ui/FieldStatus.tsx",
+      "hash": "8156d91ce44385e46b664e32ba9745dc7dd132acb6f924a3ceb31141f6b45ff5"
+    },
+    {
+      "path": "src/ui/Pages.tsx",
+      "hash": "30a1b7562bb5ccd494106bcd7dfe2b6b7f1f3f57b69255d065afc39fad780ebd"
+    },
+    {
+      "path": "src/ui/PersonPicker.tsx",
+      "hash": "1ba95d287d3cb5bf54685ce5da7f70bf986ced44afe397e8262d7e873f89a9bb"
+    },
+    {
+      "path": "src/ui/PhoneGroup.tsx",
+      "hash": "4c549b7cc3023e23d9f19210ba5bc37e7f187f99ea18b8062bbf181a83362d5a"
+    },
+    {
+      "path": "src/ui/Preview.tsx",
+      "hash": "d8d7dc8de38eb0de8783f2b0dd896ba3c8c5f8c9030b32ef5c8cd74a2d27186a"
+    },
+    {
+      "path": "src/ui/SearchSelect.tsx",
+      "hash": "d074ee7ab0d8f0030299dc1002559dc8b614f2f3b12314c25b035a27426fa73e"
+    },
+    {
+      "path": "src/ui/Thumbnails.tsx",
+      "hash": "3938848dac11272dcb60d2e62be07f45bc7e258ad28bc11ed718555e4b5b5399"
+    },
+    {
+      "path": "src/ui/components.tsx",
+      "hash": "4c4ab8e61e6200d2542880fe7fd943df0cc982f58cc79ce17b5046e7ba7141b0"
+    },
+    {
+      "path": "src/ui/date-drafts.tsx",
+      "hash": "753201928ded1b6a83360aa2deef8ccc267227d6b3c156d3a77e30b898a4b0a4"
+    },
+    {
+      "path": "src/ui/date-model.ts",
+      "hash": "8d04730578f75ac26140ffaceb824ef9b565fbb512ef95713534d6f43d27c5f0"
+    },
+    {
+      "path": "src/ui/focus-field.ts",
+      "hash": "de8d2705c9999c1bae9f39d774fe5ed7390148d1e56030367c8f8510487550d6"
+    },
+    {
+      "path": "src/ui/format.ts",
+      "hash": "6b6efe68389f3ad9d168fadfef9923c69a97cbf26b46e40e4a8b75ff732e81eb"
+    },
+    {
+      "path": "src/ui/questionnaire.ts",
+      "hash": "9c313cc5903f22472674e1236be9e6bb06d262c5a6fc1a2cced68a2ab2b63299"
+    },
+    {
+      "path": "src/ui/reference.ts",
+      "hash": "80fc0db2274ec6e5b7349329828e769696be80b9041c64fc15b6fc2cd39a808e"
+    },
+    {
+      "path": "src/ui/search-options.ts",
+      "hash": "a42f252fa9d0ecd73b10711ef25fada4771bb1b1d19e841663ed97e12751bb82"
+    },
+    {
+      "path": "src/ui/selection.ts",
+      "hash": "55b8335f109648a2d285e9c443f28ee1ec356d42c03826543db67fd67a8e4032"
+    },
+    {
+      "path": "src/ui/validation.ts",
+      "hash": "04bbdaa86403177ee454d5a578960d77437b58399039077bfaf52a9c3d041f87"
+    }
+  ]
+}

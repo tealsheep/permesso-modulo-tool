@@ -1,0 +1,26 @@
+/* D42: docs/UI-DESIGN.md v3 §2. New visual values require user approval. */
+:root {
+  --surface: #eee8df;
+  --page-outer: #e5e0d8;
+  --ink: #342d28;
+  --muted: #71665d;
+  --accent: #ac4e2e;
+  --accent-hover: #994327;
+  --on-accent: #fff7ee;
+  --error: #a73930;
+  --line: #d3c8bc;
+  --date-sep: #9e8e7c;
+  --ok: #2f6b45;
+  --panel: 8px 8px 24px #ddd6cd, -8px -8px 24px #fbf6ef;
+  --raised: 5px 5px 12px #d8d1c8, -5px -5px 12px #fffbf5;
+  --raised-xs: 2px 2px 5px #d5cec5, -2px -2px 5px #fffaf3;
+  --inset: inset 2px 2px 5px #dcd5cc, inset -2px -2px 5px #f9f5ef;
+  --primary-shadow: 4px 5px 10px #c5ad9b, -3px -3px 8px #fff8ee;
+  --primary-pressed: 1px 2px 4px #bfa48f;
+  --backdrop: #30251e55;
+  --radius-card: 22px;
+  --radius-input: 13px;
+  --radius-dialog: 24px;
+  --radius-button: 26px;
+  --radius-circle: 50%;
+}

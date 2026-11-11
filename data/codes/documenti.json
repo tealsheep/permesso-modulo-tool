@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "table": "documenti",
+  "source": "official/2026-11-05_Informativa_Generale.pdf",
+  "entries": [
+    {
+      "code": "01",
+      "nameIt": "TITOLO DI VIAGGIO PER APOLIDI",
+      "nameZh": "无国籍人旅行证"
+    },
+    {
+      "code": "02",
+      "nameIt": "DOCUMENTO DI VIAGGIO PER RIFUGIATI",
+      "nameZh": "难民旅行证"
+    },
+    {
+      "code": "03",
+      "nameIt": "TITOLO DI VIAGGIO PER STRANIERI",
+      "nameZh": "外国人旅行证"
+    },
+    {
+      "code": "04",
+      "nameIt": "LIBRETTO DI NAVIGAZIONE PER I MARITTIMI",
+      "nameZh": "海员证"
+    },
+    {
+      "code": "05",
+      "nameIt": "DOCUMENTO DI NAVIGAZIONE AEREA",
+      "nameZh": "航空机组证件"
+    },
+    {
+      "code": "06",
+      "nameIt": "LASCIAPASSARE DELLE NAZIONI UNITE",
+      "nameZh": "联合国通行证"
+    },
+    {
+      "code": "07",
+      "nameIt": "DOCUMENTO RILASCIATO DA UN QUARTIER GENERALE DELLA NATO",
+      "nameZh": "北约总部签发的证件"
+    },
+    {
+      "code": "08",
+      "nameIt": "DOCUMENTO DI VIAGGIO UNMIK",
+      "nameZh": "UNMIK 旅行证件"
+    },
+    {
+      "code": "09",
+      "nameIt": "CARTA DI IDENTITÀ PER I CITTADINI DEGLI STATI DELLA U.E.",
+      "nameZh": "欧盟国家公民身份证"
+    }
+  ]
+}

@@ -1,0 +1,1158 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "table": "stati",
+  "source": "official/2026-11-05_Informativa_Generale.pdf",
+  "entries": [
+    {
+      "code": "AFG",
+      "nameIt": "AFGHANISTAN",
+      "nameZh": "阿富汗"
+    },
+    {
+      "code": "ALB",
+      "nameIt": "ALBANIA",
+      "nameZh": "阿尔巴尼亚"
+    },
+    {
+      "code": "DZA",
+      "nameIt": "ALGERIA",
+      "nameZh": "阿尔及利亚"
+    },
+    {
+      "code": "AND",
+      "nameIt": "ANDORRA",
+      "nameZh": "安道尔"
+    },
+    {
+      "code": "AGO",
+      "nameIt": "ANGOLA",
+      "nameZh": "安哥拉"
+    },
+    {
+      "code": "AIA",
+      "nameIt": "ANGUILLA (ISOLA)",
+      "nameZh": "安圭拉"
+    },
+    {
+      "code": "ATG",
+      "nameIt": "ANTIGUA E BARBUDA",
+      "nameZh": "安提瓜和巴布达"
+    },
+    {
+      "code": "XXX",
+      "nameIt": "APOLIDE",
+      "nameZh": "无国籍"
+    },
+    {
+      "code": "SAU",
+      "nameIt": "ARABIA SAUDITA",
+      "nameZh": "沙特阿拉伯"
+    },
+    {
+      "code": "ARG",
+      "nameIt": "ARGENTINA",
+      "nameZh": "阿根廷"
+    },
+    {
+      "code": "ARM",
+      "nameIt": "ARMENIA",
+      "nameZh": "亚美尼亚"
+    },
+    {
+      "code": "AUS",
+      "nameIt": "AUSTRALIA",
+      "nameZh": "澳大利亚"
+    },
+    {
+      "code": "AUT",
+      "nameIt": "AUSTRIA",
+      "nameZh": "奥地利"
+    },
+    {
+      "code": "AZE",
+      "nameIt": "AZERBAIGIAN",
+      "nameZh": "阿塞拜疆"
+    },
+    {
+      "code": "BHS",
+      "nameIt": "BAHAMA",
+      "nameZh": "巴哈马"
+    },
+    {
+      "code": "BHR",
+      "nameIt": "BAHREIN",
+      "nameZh": "巴林"
+    },
+    {
+      "code": "BGD",
+      "nameIt": "BANGLADESH",
+      "nameZh": "孟加拉国"
+    },
+    {
+      "code": "BRB",
+      "nameIt": "BARBADOS",
+      "nameZh": "巴巴多斯"
+    },
+    {
+      "code": "BEL",
+      "nameIt": "BELGIO",
+      "nameZh": "比利时"
+    },
+    {
+      "code": "BLZ",
+      "nameIt": "BELIZE",
+      "nameZh": "伯利兹"
+    },
+    {
+      "code": "BEN",
+      "nameIt": "BENIN",
+      "nameZh": "贝宁"
+    },
+    {
+      "code": "BMU",
+      "nameIt": "BERMUDE",
+      "nameZh": "百慕大"
+    },
+    {
+      "code": "BTN",
+      "nameIt": "BHUTAN",
+      "nameZh": "不丹"
+    },
+    {
+      "code": "BLR",
+      "nameIt": "BIELORUSSIA",
+      "nameZh": "白俄罗斯"
+    },
+    {
+      "code": "BOL",
+      "nameIt": "BOLIVIA",
+      "nameZh": "玻利维亚"
+    },
+    {
+      "code": "BIH",
+      "nameIt": "BOSNIA ED ERZEGOVINA",
+      "nameZh": "波斯尼亚和黑塞哥维那"
+    },
+    {
+      "code": "BWA",
+      "nameIt": "BOTSWANA",
+      "nameZh": "博茨瓦纳"
+    },
+    {
+      "code": "BRA",
+      "nameIt": "BRASILE",
+      "nameZh": "巴西"
+    },
+    {
+      "code": "BRN",
+      "nameIt": "BRUNEI",
+      "nameZh": "文莱"
+    },
+    {
+      "code": "BGR",
+      "nameIt": "BULGARIA",
+      "nameZh": "保加利亚"
+    },
+    {
+      "code": "BFA",
+      "nameIt": "BURKINA FASO",
+      "nameZh": "布基纳法索"
+    },
+    {
+      "code": "BDI",
+      "nameIt": "BURUNDI",
+      "nameZh": "布隆迪"
+    },
+    {
+      "code": "KHM",
+      "nameIt": "CAMBOGIA",
+      "nameZh": "柬埔寨"
+    },
+    {
+      "code": "CMR",
+      "nameIt": "CAMERUN",
+      "nameZh": "喀麦隆"
+    },
+    {
+      "code": "CAN",
+      "nameIt": "CANADA",
+      "nameZh": "加拿大"
+    },
+    {
+      "code": "CPV",
+      "nameIt": "CAPO VERDE",
+      "nameZh": "佛得角"
+    },
+    {
+      "code": "CYM",
+      "nameIt": "CAYMAN (ISOLE)",
+      "nameZh": "开曼群岛"
+    },
+    {
+      "code": "CAF",
+      "nameIt": "CENTRAFRICA",
+      "nameZh": "中非"
+    },
+    {
+      "code": "CXR",
+      "nameIt": "CHRISTMAS",
+      "nameZh": "圣诞岛"
+    },
+    {
+      "code": "TCD",
+      "nameIt": "CIAD",
+      "nameZh": "乍得"
+    },
+    {
+      "code": "CHL",
+      "nameIt": "CILE",
+      "nameZh": "智利"
+    },
+    {
+      "code": "CHN",
+      "nameIt": "CINA POPOLARE",
+      "nameZh": "中国"
+    },
+    {
+      "code": "CYP",
+      "nameIt": "CIPRO",
+      "nameZh": "塞浦路斯"
+    },
+    {
+      "code": "VAT",
+      "nameIt": "CITTA' DEL VATICANO",
+      "nameZh": "梵蒂冈"
+    },
+    {
+      "code": "CCK",
+      "nameIt": "COCOS",
+      "nameZh": "科科斯群岛"
+    },
+    {
+      "code": "COL",
+      "nameIt": "COLOMBIA",
+      "nameZh": "哥伦比亚"
+    },
+    {
+      "code": "COM",
+      "nameIt": "COMORE",
+      "nameZh": "科摩罗"
+    },
+    {
+      "code": "COG",
+      "nameIt": "CONGO",
+      "nameZh": "刚果（布）"
+    },
+    {
+      "code": "PRK",
+      "nameIt": "COREA DEL NORD",
+      "nameZh": "朝鲜"
+    },
+    {
+      "code": "KOR",
+      "nameIt": "COREA DEL SUD",
+      "nameZh": "韩国"
+    },
+    {
+      "code": "CIV",
+      "nameIt": "COSTA D'AVORIO",
+      "nameZh": "科特迪瓦"
+    },
+    {
+      "code": "CRI",
+      "nameIt": "COSTARICA",
+      "nameZh": "哥斯达黎加"
+    },
+    {
+      "code": "HRV",
+      "nameIt": "CROAZIA",
+      "nameZh": "克罗地亚"
+    },
+    {
+      "code": "CUB",
+      "nameIt": "CUBA",
+      "nameZh": "古巴"
+    },
+    {
+      "code": "DNK",
+      "nameIt": "DANIMARCA",
+      "nameZh": "丹麦"
+    },
+    {
+      "code": "DMA",
+      "nameIt": "DOMINICA",
+      "nameZh": "多米尼克"
+    },
+    {
+      "code": "ECU",
+      "nameIt": "ECUADOR",
+      "nameZh": "厄瓜多尔"
+    },
+    {
+      "code": "EGY",
+      "nameIt": "EGITTO",
+      "nameZh": "埃及"
+    },
+    {
+      "code": "SLV",
+      "nameIt": "EL SALVADOR",
+      "nameZh": "萨尔瓦多"
+    },
+    {
+      "code": "ARE",
+      "nameIt": "EMIRATI ARABI UNITI",
+      "nameZh": "阿联酋"
+    },
+    {
+      "code": "ERI",
+      "nameIt": "ERITREA",
+      "nameZh": "厄立特里亚"
+    },
+    {
+      "code": "EST",
+      "nameIt": "ESTONIA",
+      "nameZh": "爱沙尼亚"
+    },
+    {
+      "code": "ETH",
+      "nameIt": "ETIOPIA",
+      "nameZh": "埃塞俄比亚"
+    },
+    {
+      "code": "XXA",
+      "nameIt": "EX UNIONE SOVIETICA",
+      "nameZh": "前苏联"
+    },
+    {
+      "code": "FRO",
+      "nameIt": "FAER OER",
+      "nameZh": "法罗群岛"
+    },
+    {
+      "code": "FJI",
+      "nameIt": "FIGI",
+      "nameZh": "斐济"
+    },
+    {
+      "code": "PHL",
+      "nameIt": "FILIPPINE",
+      "nameZh": "菲律宾"
+    },
+    {
+      "code": "FIN",
+      "nameIt": "FINLANDIA",
+      "nameZh": "芬兰"
+    },
+    {
+      "code": "FRA",
+      "nameIt": "FRANCIA",
+      "nameZh": "法国"
+    },
+    {
+      "code": "GAB",
+      "nameIt": "GABON",
+      "nameZh": "加蓬"
+    },
+    {
+      "code": "GMB",
+      "nameIt": "GAMBIA",
+      "nameZh": "冈比亚"
+    },
+    {
+      "code": "GEO",
+      "nameIt": "GEORGIA",
+      "nameZh": "格鲁吉亚"
+    },
+    {
+      "code": "DEU",
+      "nameIt": "GERMANIA",
+      "nameZh": "德国"
+    },
+    {
+      "code": "GHA",
+      "nameIt": "GHANA",
+      "nameZh": "加纳"
+    },
+    {
+      "code": "JAM",
+      "nameIt": "GIAMAICA",
+      "nameZh": "牙买加"
+    },
+    {
+      "code": "JPN",
+      "nameIt": "GIAPPONE",
+      "nameZh": "日本"
+    },
+    {
+      "code": "DJI",
+      "nameIt": "GIBUTI",
+      "nameZh": "吉布提"
+    },
+    {
+      "code": "JOR",
+      "nameIt": "GIORDANIA",
+      "nameZh": "约旦"
+    },
+    {
+      "code": "GRC",
+      "nameIt": "GRECIA",
+      "nameZh": "希腊"
+    },
+    {
+      "code": "GRD",
+      "nameIt": "GRENADA",
+      "nameZh": "格林纳达"
+    },
+    {
+      "code": "GRL",
+      "nameIt": "GROENLANDIA",
+      "nameZh": "格陵兰"
+    },
+    {
+      "code": "GLP",
+      "nameIt": "GUADALUPA",
+      "nameZh": "瓜德罗普"
+    },
+    {
+      "code": "GUM",
+      "nameIt": "GUAM",
+      "nameZh": "关岛"
+    },
+    {
+      "code": "GTM",
+      "nameIt": "GUATEMALA",
+      "nameZh": "危地马拉"
+    },
+    {
+      "code": "GUF",
+      "nameIt": "GUAYANA FRANCESE",
+      "nameZh": "法属圭亚那"
+    },
+    {
+      "code": "GIN",
+      "nameIt": "GUINEA",
+      "nameZh": "几内亚"
+    },
+    {
+      "code": "GNB",
+      "nameIt": "GUINEA BISSAU",
+      "nameZh": "几内亚比绍"
+    },
+    {
+      "code": "GNQ",
+      "nameIt": "GUINEA EQUATORIALE",
+      "nameZh": "赤道几内亚"
+    },
+    {
+      "code": "GUY",
+      "nameIt": "GUYANA",
+      "nameZh": "圭亚那"
+    },
+    {
+      "code": "HTI",
+      "nameIt": "HAITI",
+      "nameZh": "海地"
+    },
+    {
+      "code": "HND",
+      "nameIt": "HONDURAS",
+      "nameZh": "洪都拉斯"
+    },
+    {
+      "code": "HKG",
+      "nameIt": "HONG KONG",
+      "nameZh": "中国香港"
+    },
+    {
+      "code": "IND",
+      "nameIt": "INDIA",
+      "nameZh": "印度"
+    },
+    {
+      "code": "IDN",
+      "nameIt": "INDONESIA",
+      "nameZh": "印度尼西亚"
+    },
+    {
+      "code": "IRN",
+      "nameIt": "IRAN",
+      "nameZh": "伊朗"
+    },
+    {
+      "code": "IRQ",
+      "nameIt": "IRAQ",
+      "nameZh": "伊拉克"
+    },
+    {
+      "code": "IRL",
+      "nameIt": "IRLANDA",
+      "nameZh": "爱尔兰"
+    },
+    {
+      "code": "ISL",
+      "nameIt": "ISLANDA",
+      "nameZh": "冰岛"
+    },
+    {
+      "code": "VIR",
+      "nameIt": "ISOLE VERGINI",
+      "nameZh": "美属维尔京群岛"
+    },
+    {
+      "code": "ISR",
+      "nameIt": "ISRAELE",
+      "nameZh": "以色列"
+    },
+    {
+      "code": "ITA",
+      "nameIt": "ITALIA",
+      "nameZh": "意大利"
+    },
+    {
+      "code": "KAZ",
+      "nameIt": "KAZAKISTAN",
+      "nameZh": "哈萨克斯坦"
+    },
+    {
+      "code": "KEN",
+      "nameIt": "KENIA",
+      "nameZh": "肯尼亚"
+    },
+    {
+      "code": "KGZ",
+      "nameIt": "KIRGHIZISTAN",
+      "nameZh": "吉尔吉斯斯坦"
+    },
+    {
+      "code": "KIR",
+      "nameIt": "KIRIBATI",
+      "nameZh": "基里巴斯"
+    },
+    {
+      "code": "KOS",
+      "nameIt": "KOSOVO",
+      "nameZh": "科索沃"
+    },
+    {
+      "code": "KWT",
+      "nameIt": "KUWAIT",
+      "nameZh": "科威特"
+    },
+    {
+      "code": "REU",
+      "nameIt": "LA REUNION",
+      "nameZh": "留尼汪"
+    },
+    {
+      "code": "LAO",
+      "nameIt": "LAOS",
+      "nameZh": "老挝"
+    },
+    {
+      "code": "LSO",
+      "nameIt": "LESOTHO",
+      "nameZh": "莱索托"
+    },
+    {
+      "code": "LVA",
+      "nameIt": "LETTONIA",
+      "nameZh": "拉脱维亚"
+    },
+    {
+      "code": "LBN",
+      "nameIt": "LIBANO",
+      "nameZh": "黎巴嫩"
+    },
+    {
+      "code": "LBR",
+      "nameIt": "LIBERIA",
+      "nameZh": "利比里亚"
+    },
+    {
+      "code": "LBY",
+      "nameIt": "LIBIA",
+      "nameZh": "利比亚"
+    },
+    {
+      "code": "LIE",
+      "nameIt": "LIECHTENSTEIN",
+      "nameZh": "列支敦士登"
+    },
+    {
+      "code": "LTU",
+      "nameIt": "LITUANIA",
+      "nameZh": "立陶宛"
+    },
+    {
+      "code": "LUX",
+      "nameIt": "LUSSEMBURGO",
+      "nameZh": "卢森堡"
+    },
+    {
+      "code": "MAC",
+      "nameIt": "MACAO",
+      "nameZh": "中国澳门"
+    },
+    {
+      "code": "MDG",
+      "nameIt": "MADAGASCAR",
+      "nameZh": "马达加斯加"
+    },
+    {
+      "code": "MWI",
+      "nameIt": "MALAWI",
+      "nameZh": "马拉维"
+    },
+    {
+      "code": "MYS",
+      "nameIt": "MALAYSIA",
+      "nameZh": "马来西亚"
+    },
+    {
+      "code": "MDV",
+      "nameIt": "MALDIVE",
+      "nameZh": "马尔代夫"
+    },
+    {
+      "code": "MLI",
+      "nameIt": "MALI",
+      "nameZh": "马里"
+    },
+    {
+      "code": "MLT",
+      "nameIt": "MALTA",
+      "nameZh": "马耳他"
+    },
+    {
+      "code": "FLK",
+      "nameIt": "MALVINE",
+      "nameZh": "马尔维纳斯群岛（福克兰群岛）"
+    },
+    {
+      "code": "MAR",
+      "nameIt": "MAROCCO",
+      "nameZh": "摩洛哥"
+    },
+    {
+      "code": "MHL",
+      "nameIt": "MARSHALL",
+      "nameZh": "马绍尔群岛"
+    },
+    {
+      "code": "MTQ",
+      "nameIt": "MARTINICA",
+      "nameZh": "马提尼克"
+    },
+    {
+      "code": "MRT",
+      "nameIt": "MAURITANIA",
+      "nameZh": "毛里塔尼亚"
+    },
+    {
+      "code": "MUS",
+      "nameIt": "MAURIZIO",
+      "nameZh": "毛里求斯"
+    },
+    {
+      "code": "MYT",
+      "nameIt": "MAYOTTE",
+      "nameZh": "马约特"
+    },
+    {
+      "code": "MEX",
+      "nameIt": "MESSICO",
+      "nameZh": "墨西哥"
+    },
+    {
+      "code": "FSM",
+      "nameIt": "MICRONESIA STATI FEDERALI",
+      "nameZh": "密克罗尼西亚联邦"
+    },
+    {
+      "code": "MDA",
+      "nameIt": "MOLDAVIA",
+      "nameZh": "摩尔多瓦"
+    },
+    {
+      "code": "MCO",
+      "nameIt": "MONACO",
+      "nameZh": "摩纳哥"
+    },
+    {
+      "code": "MNG",
+      "nameIt": "MONGOLIA",
+      "nameZh": "蒙古"
+    },
+    {
+      "code": "MNE",
+      "nameIt": "MONTENEGRO",
+      "nameZh": "黑山"
+    },
+    {
+      "code": "MSR",
+      "nameIt": "MONTSERRAT",
+      "nameZh": "蒙特塞拉特"
+    },
+    {
+      "code": "MOZ",
+      "nameIt": "MOZAMBICO",
+      "nameZh": "莫桑比克"
+    },
+    {
+      "code": "MMR",
+      "nameIt": "MYANMAR (BIRMANIA)",
+      "nameZh": "缅甸"
+    },
+    {
+      "code": "NAM",
+      "nameIt": "NAMIBIA",
+      "nameZh": "纳米比亚"
+    },
+    {
+      "code": "NRU",
+      "nameIt": "NAURU",
+      "nameZh": "瑙鲁"
+    },
+    {
+      "code": "NPL",
+      "nameIt": "NEPAL",
+      "nameZh": "尼泊尔"
+    },
+    {
+      "code": "NIC",
+      "nameIt": "NICARAGUA",
+      "nameZh": "尼加拉瓜"
+    },
+    {
+      "code": "NER",
+      "nameIt": "NIGER",
+      "nameZh": "尼日尔"
+    },
+    {
+      "code": "NGA",
+      "nameIt": "NIGERIA",
+      "nameZh": "尼日利亚"
+    },
+    {
+      "code": "NFK",
+      "nameIt": "NORFOLK",
+      "nameZh": "诺福克岛"
+    },
+    {
+      "code": "NOR",
+      "nameIt": "NORVEGIA",
+      "nameZh": "挪威"
+    },
+    {
+      "code": "NCL",
+      "nameIt": "NUOVA CALEDONIA",
+      "nameZh": "新喀里多尼亚"
+    },
+    {
+      "code": "NZL",
+      "nameIt": "NUOVA ZELANDA",
+      "nameZh": "新西兰"
+    },
+    {
+      "code": "OMN",
+      "nameIt": "OMAN",
+      "nameZh": "阿曼"
+    },
+    {
+      "code": "NLD",
+      "nameIt": "PAESI BASSI",
+      "nameZh": "荷兰"
+    },
+    {
+      "code": "PAK",
+      "nameIt": "PAKISTAN",
+      "nameZh": "巴基斯坦"
+    },
+    {
+      "code": "PLW",
+      "nameIt": "PALAU REPUBBLICA",
+      "nameZh": "帕劳"
+    },
+    {
+      "code": "PSE",
+      "nameIt": "PALESTINA",
+      "nameZh": "巴勒斯坦"
+    },
+    {
+      "code": "PAN",
+      "nameIt": "PANAMA",
+      "nameZh": "巴拿马"
+    },
+    {
+      "code": "PNG",
+      "nameIt": "PAPUASIA-N.GUINEA",
+      "nameZh": "巴布亚新几内亚"
+    },
+    {
+      "code": "PRY",
+      "nameIt": "PARAGUAY",
+      "nameZh": "巴拉圭"
+    },
+    {
+      "code": "PER",
+      "nameIt": "PERU'",
+      "nameZh": "秘鲁"
+    },
+    {
+      "code": "PCN",
+      "nameIt": "PITCAIRN",
+      "nameZh": "皮特凯恩群岛"
+    },
+    {
+      "code": "PYF",
+      "nameIt": "POLINESIA",
+      "nameZh": "法属波利尼西亚"
+    },
+    {
+      "code": "POL",
+      "nameIt": "POLONIA",
+      "nameZh": "波兰"
+    },
+    {
+      "code": "PRT",
+      "nameIt": "PORTOGALLO",
+      "nameZh": "葡萄牙"
+    },
+    {
+      "code": "PRI",
+      "nameIt": "PUERTO RICO",
+      "nameZh": "波多黎各"
+    },
+    {
+      "code": "QAT",
+      "nameIt": "QATAR",
+      "nameZh": "卡塔尔"
+    },
+    {
+      "code": "GBR",
+      "nameIt": "REGNO UNITO",
+      "nameZh": "英国"
+    },
+    {
+      "code": "CZE",
+      "nameIt": "REPUBBLICA CECA",
+      "nameZh": "捷克"
+    },
+    {
+      "code": "COD",
+      "nameIt": "REPUBBLICA DEMOCRATICA DEL CONGO",
+      "nameZh": "刚果（金）"
+    },
+    {
+      "code": "MKD",
+      "nameIt": "REPUBBLICA DI MACEDONIA DEL NORD",
+      "nameZh": "北马其顿"
+    },
+    {
+      "code": "DOM",
+      "nameIt": "REPUBBLICA DOMINICANA",
+      "nameZh": "多米尼加共和国"
+    },
+    {
+      "code": "SVK",
+      "nameIt": "REPUBBLICA SLOVACCA",
+      "nameZh": "斯洛伐克"
+    },
+    {
+      "code": "ROU",
+      "nameIt": "ROMANIA",
+      "nameZh": "罗马尼亚"
+    },
+    {
+      "code": "RWA",
+      "nameIt": "RUANDA",
+      "nameZh": "卢旺达"
+    },
+    {
+      "code": "RUS",
+      "nameIt": "RUSSIA",
+      "nameZh": "俄罗斯"
+    },
+    {
+      "code": "KNA",
+      "nameIt": "S. CHRISTOPHER E NEVIS",
+      "nameZh": "圣基茨和尼维斯"
+    },
+    {
+      "code": "ESH",
+      "nameIt": "SAHARA SPAGNOLO",
+      "nameZh": "西撒哈拉"
+    },
+    {
+      "code": "LCA",
+      "nameIt": "SAINT LUCIA",
+      "nameZh": "圣卢西亚"
+    },
+    {
+      "code": "SPM",
+      "nameIt": "SAINT PIERRE ET MIQUELON",
+      "nameZh": "圣皮埃尔和密克隆"
+    },
+    {
+      "code": "VCT",
+      "nameIt": "SAINT VINCENT E GRENADINE",
+      "nameZh": "圣文森特和格林纳丁斯"
+    },
+    {
+      "code": "SLB",
+      "nameIt": "SALOMONE",
+      "nameZh": "所罗门群岛"
+    },
+    {
+      "code": "WSM",
+      "nameIt": "SAMOA",
+      "nameZh": "萨摩亚"
+    },
+    {
+      "code": "ASM",
+      "nameIt": "SAMOA AMERICANE",
+      "nameZh": "美属萨摩亚"
+    },
+    {
+      "code": "SMR",
+      "nameIt": "SAN MARINO",
+      "nameZh": "圣马力诺"
+    },
+    {
+      "code": "SHN",
+      "nameIt": "SANT'ELENA",
+      "nameZh": "圣赫勒拿"
+    },
+    {
+      "code": "STP",
+      "nameIt": "SAO TOME' E PRINCIPE",
+      "nameZh": "圣多美和普林西比"
+    },
+    {
+      "code": "SYC",
+      "nameIt": "SEICELLE",
+      "nameZh": "塞舌尔"
+    },
+    {
+      "code": "SEN",
+      "nameIt": "SENEGAL",
+      "nameZh": "塞内加尔"
+    },
+    {
+      "code": "SRB",
+      "nameIt": "SERBIA",
+      "nameZh": "塞尔维亚"
+    },
+    {
+      "code": "SLE",
+      "nameIt": "SIERRA LEONE",
+      "nameZh": "塞拉利昂"
+    },
+    {
+      "code": "SGP",
+      "nameIt": "SINGAPORE",
+      "nameZh": "新加坡"
+    },
+    {
+      "code": "SYR",
+      "nameIt": "SIRIA",
+      "nameZh": "叙利亚"
+    },
+    {
+      "code": "SVN",
+      "nameIt": "SLOVENIA",
+      "nameZh": "斯洛文尼亚"
+    },
+    {
+      "code": "SOM",
+      "nameIt": "SOMALIA",
+      "nameZh": "索马里"
+    },
+    {
+      "code": "ESP",
+      "nameIt": "SPAGNA",
+      "nameZh": "西班牙"
+    },
+    {
+      "code": "LKA",
+      "nameIt": "SRI LANKA (CEYLON)",
+      "nameZh": "斯里兰卡"
+    },
+    {
+      "code": "USA",
+      "nameIt": "STATI UNITI D'AMERICA",
+      "nameZh": "美国"
+    },
+    {
+      "code": "ZAF",
+      "nameIt": "SUD AFRICA",
+      "nameZh": "南非"
+    },
+    {
+      "code": "SSD",
+      "nameIt": "SUD SUDAN",
+      "nameZh": "南苏丹"
+    },
+    {
+      "code": "SDN",
+      "nameIt": "SUDAN",
+      "nameZh": "苏丹"
+    },
+    {
+      "code": "SUR",
+      "nameIt": "SURINAME",
+      "nameZh": "苏里南"
+    },
+    {
+      "code": "SWE",
+      "nameIt": "SVEZIA",
+      "nameZh": "瑞典"
+    },
+    {
+      "code": "CHE",
+      "nameIt": "SVIZZERA",
+      "nameZh": "瑞士"
+    },
+    {
+      "code": "SWZ",
+      "nameIt": "SWAZILAND",
+      "nameZh": "斯威士兰（埃斯瓦蒂尼）"
+    },
+    {
+      "code": "TJK",
+      "nameIt": "TAGIKISTAN",
+      "nameZh": "塔吉克斯坦"
+    },
+    {
+      "code": "TWN",
+      "nameIt": "TAIWAN",
+      "nameZh": "中国台湾"
+    },
+    {
+      "code": "TZA",
+      "nameIt": "TANZANIA",
+      "nameZh": "坦桑尼亚"
+    },
+    {
+      "code": "THA",
+      "nameIt": "THAILANDIA",
+      "nameZh": "泰国"
+    },
+    {
+      "code": "TLS",
+      "nameIt": "TIMOR",
+      "nameZh": "东帝汶"
+    },
+    {
+      "code": "TGO",
+      "nameIt": "TOGO",
+      "nameZh": "多哥"
+    },
+    {
+      "code": "TKL",
+      "nameIt": "TOKELAU",
+      "nameZh": "托克劳"
+    },
+    {
+      "code": "TON",
+      "nameIt": "TONGA",
+      "nameZh": "汤加"
+    },
+    {
+      "code": "TTO",
+      "nameIt": "TRINIDAD E TOBAGO",
+      "nameZh": "特立尼达和多巴哥"
+    },
+    {
+      "code": "TUN",
+      "nameIt": "TUNISIA",
+      "nameZh": "突尼斯"
+    },
+    {
+      "code": "TUR",
+      "nameIt": "TURCHIA",
+      "nameZh": "土耳其"
+    },
+    {
+      "code": "TKM",
+      "nameIt": "TURKMENISTAN",
+      "nameZh": "土库曼斯坦"
+    },
+    {
+      "code": "TCA",
+      "nameIt": "TURKS",
+      "nameZh": "特克斯和凯科斯群岛"
+    },
+    {
+      "code": "TUV",
+      "nameIt": "TUVALU",
+      "nameZh": "图瓦卢"
+    },
+    {
+      "code": "UKR",
+      "nameIt": "UCRAINA",
+      "nameZh": "乌克兰"
+    },
+    {
+      "code": "UGA",
+      "nameIt": "UGANDA",
+      "nameZh": "乌干达"
+    },
+    {
+      "code": "HUN",
+      "nameIt": "UNGHERIA",
+      "nameZh": "匈牙利"
+    },
+    {
+      "code": "URY",
+      "nameIt": "URUGUAY",
+      "nameZh": "乌拉圭"
+    },
+    {
+      "code": "UZB",
+      "nameIt": "UZBEKISTAN",
+      "nameZh": "乌兹别克斯坦"
+    },
+    {
+      "code": "VUT",
+      "nameIt": "VANUATU",
+      "nameZh": "瓦努阿图"
+    },
+    {
+      "code": "VEN",
+      "nameIt": "VENEZUELA",
+      "nameZh": "委内瑞拉"
+    },
+    {
+      "code": "VGB",
+      "nameIt": "VERGINI BRITANNICHE (ISOLE)",
+      "nameZh": "英属维尔京群岛"
+    },
+    {
+      "code": "VNM",
+      "nameIt": "VIETNAM",
+      "nameZh": "越南"
+    },
+    {
+      "code": "WLF",
+      "nameIt": "WALLIS",
+      "nameZh": "瓦利斯和富图纳"
+    },
+    {
+      "code": "YEM",
+      "nameIt": "YEMEN",
+      "nameZh": "也门"
+    },
+    {
+      "code": "ZMB",
+      "nameIt": "ZAMBIA",
+      "nameZh": "赞比亚"
+    },
+    {
+      "code": "ZWE",
+      "nameIt": "ZIMBABWE",
+      "nameZh": "津巴布韦"
+    }
+  ]
+}

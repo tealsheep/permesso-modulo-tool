@@ -1,0 +1,1757 @@
+{
+  "form": "modulo1",
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "rules": [
+    {
+      "field": "M1-H01",
+      "value": {
+        "path": "questura.city"
+      }
+    },
+    {
+      "field": "M1-H02",
+      "value": {
+        "path": "questura.province"
+      }
+    },
+    {
+      "field": "M1-003",
+      "value": {
+        "path": "person.surname"
+      }
+    },
+    {
+      "field": "M1-004",
+      "value": {
+        "path": "person.givenNames"
+      }
+    },
+    {
+      "field": "M1-005",
+      "value": {
+        "path": "address.province"
+      }
+    },
+    {
+      "field": "M1-006",
+      "value": {
+        "path": "address.comune"
+      }
+    },
+    {
+      "field": "M1-008",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-009",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "operations": [
+          "rinnovo"
+        ]
+      }
+    },
+    {
+      "field": "M1-010",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "operations": [
+          "aggiornamento"
+        ]
+      }
+    },
+    {
+      "field": "M1-011",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "operations": [
+          "duplicato"
+        ]
+      }
+    },
+    {
+      "field": "M1-012",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "operations": [
+          "conversione"
+        ]
+      }
+    },
+    {
+      "field": "M1-014",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "16",
+          "15",
+          "04",
+          "12",
+          "13",
+          "14",
+          "24",
+          "31",
+          "30",
+          "05",
+          "10",
+          "18",
+          "21",
+          "06",
+          "02",
+          "32",
+          "33",
+          "19",
+          "20",
+          "27",
+          "28",
+          "29",
+          "23",
+          "07",
+          "17"
+        ]
+      }
+    },
+    {
+      "field": "M1-015",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "09",
+          "03",
+          "11"
+        ]
+      }
+    },
+    {
+      "field": "M1-016",
+      "value": {
+        "path": "application.code"
+      }
+    },
+    {
+      "field": "M1-017",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "application.aggiornamentoReasons": [
+            "foto"
+          ]
+        }
+      }
+    },
+    {
+      "field": "M1-018",
+      "value": {
+        "path": "currentPermit.number"
+      }
+    },
+    {
+      "field": "M1-019",
+      "value": {
+        "path": "currentPermit.typeCode"
+      }
+    },
+    {
+      "field": "M1-020",
+      "value": {
+        "path": "currentPermit.validUntil"
+      }
+    },
+    {
+      "field": "M1-023",
+      "value": {
+        "const": "X"
+      }
+    },
+    {
+      "field": "M1-024",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "16",
+          "15",
+          "09",
+          "30",
+          "05",
+          "18",
+          "21",
+          "27",
+          "28",
+          "29"
+        ]
+      }
+    },
+    {
+      "field": "M1-024",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "23",
+          "07"
+        ],
+        "hasIncome": true
+      }
+    },
+    {
+      "field": "M1-024",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "17"
+        ],
+        "equals": {
+          "application.art27Letter": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "o",
+            "p",
+            "r"
+          ]
+        }
+      }
+    },
+    {
+      "field": "M1-025",
+      "value": {
+        "path": "application.submissionTotalSheets"
+      }
+    },
+    {
+      "field": "M1-026",
+      "value": {
+        "computed": "children.count"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14"
+        ]
+      }
+    },
+    {
+      "field": "M1-031",
+      "value": {
+        "path": "person.codiceFiscale"
+      }
+    },
+    {
+      "field": "M1-032",
+      "value": {
+        "path": "person.maritalStatus"
+      }
+    },
+    {
+      "field": "M1-033",
+      "value": {
+        "path": "person.sex"
+      }
+    },
+    {
+      "field": "M1-034",
+      "value": {
+        "path": "person.birthDate"
+      }
+    },
+    {
+      "field": "M1-035",
+      "value": {
+        "path": "person.birthCountry"
+      }
+    },
+    {
+      "field": "M1-036",
+      "value": {
+        "path": "person.citizenship"
+      }
+    },
+    {
+      "field": "M1-037",
+      "value": {
+        "path": "person.refugee"
+      }
+    },
+    {
+      "field": "M1-038",
+      "value": {
+        "path": "person.birthCity"
+      }
+    },
+    {
+      "field": "M1-040",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "document.kind": "passport"
+        }
+      }
+    },
+    {
+      "field": "M1-041",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "document.kind": "other"
+        }
+      }
+    },
+    {
+      "field": "M1-042",
+      "value": {
+        "path": "document.otherCode"
+      }
+    },
+    {
+      "field": "M1-043",
+      "value": {
+        "path": "document.otherName"
+      }
+    },
+    {
+      "field": "M1-044",
+      "value": {
+        "path": "document.number"
+      }
+    },
+    {
+      "field": "M1-045",
+      "value": {
+        "path": "document.validUntil"
+      }
+    },
+    {
+      "field": "M1-046",
+      "value": {
+        "path": "document.issuerCode"
+      }
+    },
+    {
+      "field": "M1-066",
+      "value": {
+        "path": "address.province"
+      }
+    },
+    {
+      "field": "M1-067",
+      "value": {
+        "path": "address.comune"
+      }
+    },
+    {
+      "field": "M1-068",
+      "value": {
+        "path": "address.street"
+      }
+    },
+    {
+      "field": "M1-069",
+      "value": {
+        "parts": {
+          "numero": {
+            "path": "address.civic.numero"
+          },
+          "lettera": {
+            "path": "address.civic.lettera"
+          }
+        }
+      }
+    },
+    {
+      "field": "M1-070",
+      "value": {
+        "path": "address.scala"
+      }
+    },
+    {
+      "field": "M1-071",
+      "value": {
+        "path": "address.interno"
+      }
+    },
+    {
+      "field": "M1-072",
+      "value": {
+        "path": "address.cap"
+      }
+    },
+    {
+      "field": "M1-073",
+      "value": {
+        "path": "address.email"
+      }
+    },
+    {
+      "field": "M1-074",
+      "value": {
+        "parts": {
+          "prefisso": {
+            "path": "address.phoneFixed.prefisso"
+          },
+          "numero": {
+            "path": "address.phoneFixed.numero"
+          }
+        }
+      }
+    },
+    {
+      "field": "M1-075",
+      "value": {
+        "parts": {
+          "prefisso": {
+            "path": "address.phoneMobile.prefisso"
+          },
+          "numero": {
+            "path": "address.phoneMobile.numero"
+          }
+        }
+      }
+    },
+    {
+      "field": "M1-048",
+      "value": {
+        "path": "visa.entryDate"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-049",
+      "value": {
+        "path": "visa.border"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-050",
+      "value": {
+        "path": "visa.number"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-051",
+      "value": {
+        "path": "visa.type"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-052",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "visa.entries": "single"
+        }
+      }
+    },
+    {
+      "field": "M1-053",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "visa.entries": "multiple"
+        }
+      }
+    },
+    {
+      "field": "M1-054",
+      "value": {
+        "path": "visa.notes"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-055",
+      "value": {
+        "path": "visa.durationDays"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-056",
+      "value": {
+        "path": "visa.validFrom"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-057",
+      "value": {
+        "path": "visa.validUntil"
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "32",
+          "33",
+          "21",
+          "19",
+          "20"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-077",
+      "value": {
+        "path": "mailTo.presso"
+      },
+      "when": {
+        "present": [
+          "mailTo"
+        ]
+      }
+    },
+    {
+      "field": "M1-078",
+      "value": {
+        "path": "mailTo.province"
+      },
+      "when": {
+        "present": [
+          "mailTo"
+        ]
+      }
+    },
+    {
+      "field": "M1-079",
+      "value": {
+        "path": "mailTo.comune"
+      },
+      "when": {
+        "present": [
+          "mailTo"
+        ]
+      }
+    },
+    {
+      "field": "M1-080",
+      "value": {
+        "path": "mailTo.street"
+      },
+      "when": {
+        "present": [
+          "mailTo"
+        ]
+      }
+    },
+    {
+      "field": "M1-081",
+      "value": {
+        "parts": {
+          "numero": {
+            "path": "mailTo.civic.numero"
+          },
+          "lettera": {
+            "path": "mailTo.civic.lettera"
+          }
+        }
+      },
+      "when": {
+        "present": [
+          "mailTo"
+        ]
+      }
+    },
+    {
+      "field": "M1-082",
+      "value": {
+        "path": "mailTo.scala"
+      },
+      "when": {
+        "present": [
+          "mailTo"
+        ]
+      }
+    },
+    {
+      "field": "M1-083",
+      "value": {
+        "path": "mailTo.interno"
+      },
+      "when": {
+        "present": [
+          "mailTo"
+        ]
+      }
+    },
+    {
+      "field": "M1-084",
+      "value": {
+        "path": "mailTo.cap"
+      },
+      "when": {
+        "present": [
+          "mailTo"
+        ]
+      }
+    },
+    {
+      "field": "M1-087",
+      "value": {
+        "path": "housing.idoneita.date"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-088",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "housing.idoneita.issuer": "comune"
+        }
+      }
+    },
+    {
+      "field": "M1-089",
+      "value": {
+        "path": "housing.idoneita.province"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "housing.idoneita.issuer": "comune"
+        }
+      }
+    },
+    {
+      "field": "M1-090",
+      "value": {
+        "path": "housing.idoneita.comuneOrAsl"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "housing.idoneita.issuer": "comune"
+        }
+      }
+    },
+    {
+      "field": "M1-091",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "housing.idoneita.issuer": "asl"
+        }
+      }
+    },
+    {
+      "field": "M1-092",
+      "value": {
+        "path": "housing.idoneita.province"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "housing.idoneita.issuer": "asl"
+        }
+      }
+    },
+    {
+      "field": "M1-093",
+      "value": {
+        "path": "housing.idoneita.comuneOrAsl"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "housing.idoneita.issuer": "asl"
+        }
+      }
+    },
+    {
+      "field": "M1-096",
+      "value": {
+        "path": "housing.pastResidences[0].province"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-097",
+      "value": {
+        "path": "housing.pastResidences[0].comune"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-098",
+      "value": {
+        "path": "housing.pastResidences[0].street"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-099",
+      "value": {
+        "path": "housing.pastResidences[1].province"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-100",
+      "value": {
+        "path": "housing.pastResidences[1].comune"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-101",
+      "value": {
+        "path": "housing.pastResidences[1].street"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-102",
+      "value": {
+        "path": "housing.pastResidences[2].province"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-103",
+      "value": {
+        "path": "housing.pastResidences[2].comune"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-104",
+      "value": {
+        "path": "housing.pastResidences[2].street"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-105",
+      "value": {
+        "path": "housing.pastResidences[3].province"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-106",
+      "value": {
+        "path": "housing.pastResidences[3].comune"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-107",
+      "value": {
+        "path": "housing.pastResidences[3].street"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "housing.pastResidences[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-109",
+      "value": {
+        "path": "housing.currentResidence.province"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-110",
+      "value": {
+        "path": "housing.currentResidence.comune"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-111",
+      "value": {
+        "path": "housing.currentResidence.street"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-114",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "relatedApplication.spouse": true
+        }
+      }
+    },
+    {
+      "field": "M1-115",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "relatedApplication.spouse": false
+        }
+      }
+    },
+    {
+      "field": "M1-117",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "relatedApplication.parent": true
+        }
+      }
+    },
+    {
+      "field": "M1-118",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "equals": {
+          "relatedApplication.parent": false
+        }
+      }
+    },
+    {
+      "field": "M1-120",
+      "value": {
+        "path": "dependents.cohabitingCount"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "field": "M1-122",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "dependents.spouse": true
+        }
+      }
+    },
+    {
+      "field": "M1-123",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "dependents.children": true
+        }
+      }
+    },
+    {
+      "field": "M1-124",
+      "value": {
+        "path": "dependents.childrenCount"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "dependents.children": true
+        }
+      }
+    },
+    {
+      "field": "M1-125",
+      "value": {
+        "const": "X"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "dependents.other": true
+        }
+      }
+    },
+    {
+      "field": "M1-126",
+      "value": {
+        "path": "dependents.otherRelation"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "equals": {
+          "dependents.other": true
+        }
+      }
+    },
+    {
+      "field": "M1-129",
+      "value": {
+        "path": "spouse.surname"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "spouse"
+        ]
+      }
+    },
+    {
+      "field": "M1-130",
+      "value": {
+        "path": "spouse.givenNames"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "spouse"
+        ]
+      }
+    },
+    {
+      "field": "M1-131",
+      "value": {
+        "path": "spouse.sex"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "spouse"
+        ]
+      }
+    },
+    {
+      "field": "M1-132",
+      "value": {
+        "path": "spouse.birthDate"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "spouse"
+        ]
+      }
+    },
+    {
+      "field": "M1-133",
+      "value": {
+        "path": "spouse.birthCountry"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "spouse"
+        ]
+      }
+    },
+    {
+      "field": "M1-134",
+      "value": {
+        "path": "spouse.citizenship"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "spouse"
+        ]
+      }
+    },
+    {
+      "field": "M1-135",
+      "value": {
+        "path": "spouse.birthCity"
+      },
+      "when": {
+        "applicationCodes": [
+          "09"
+        ],
+        "operations": [
+          "rilascio"
+        ],
+        "present": [
+          "spouse"
+        ]
+      }
+    },
+    {
+      "field": "M1-137",
+      "value": {
+        "path": "childrenUnder14[0].surname"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-138",
+      "value": {
+        "path": "childrenUnder14[0].givenNames"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-139",
+      "value": {
+        "path": "childrenUnder14[0].sex"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-140",
+      "value": {
+        "path": "childrenUnder14[0].birthDate"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-141",
+      "value": {
+        "path": "childrenUnder14[0].birthCountry"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-142",
+      "value": {
+        "path": "childrenUnder14[0].citizenship"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-143",
+      "value": {
+        "path": "childrenUnder14[0].birthCity"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[0]"
+        ]
+      }
+    },
+    {
+      "field": "M1-145",
+      "value": {
+        "path": "childrenUnder14[1].surname"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-146",
+      "value": {
+        "path": "childrenUnder14[1].givenNames"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-147",
+      "value": {
+        "path": "childrenUnder14[1].sex"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-148",
+      "value": {
+        "path": "childrenUnder14[1].birthDate"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-149",
+      "value": {
+        "path": "childrenUnder14[1].birthCountry"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-150",
+      "value": {
+        "path": "childrenUnder14[1].citizenship"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-151",
+      "value": {
+        "path": "childrenUnder14[1].birthCity"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[1]"
+        ]
+      }
+    },
+    {
+      "field": "M1-152",
+      "value": {
+        "path": "childrenUnder14[2].surname"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-153",
+      "value": {
+        "path": "childrenUnder14[2].givenNames"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-154",
+      "value": {
+        "path": "childrenUnder14[2].sex"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-155",
+      "value": {
+        "path": "childrenUnder14[2].birthDate"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-156",
+      "value": {
+        "path": "childrenUnder14[2].birthCountry"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-157",
+      "value": {
+        "path": "childrenUnder14[2].citizenship"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-158",
+      "value": {
+        "path": "childrenUnder14[2].birthCity"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[2]"
+        ]
+      }
+    },
+    {
+      "field": "M1-160",
+      "value": {
+        "path": "childrenUnder14[3].surname"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-161",
+      "value": {
+        "path": "childrenUnder14[3].givenNames"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-162",
+      "value": {
+        "path": "childrenUnder14[3].sex"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-163",
+      "value": {
+        "path": "childrenUnder14[3].birthDate"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-164",
+      "value": {
+        "path": "childrenUnder14[3].birthCountry"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-165",
+      "value": {
+        "path": "childrenUnder14[3].citizenship"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-166",
+      "value": {
+        "path": "childrenUnder14[3].birthCity"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[3]"
+        ]
+      }
+    },
+    {
+      "field": "M1-167",
+      "value": {
+        "path": "childrenUnder14[4].surname"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[4]"
+        ]
+      }
+    },
+    {
+      "field": "M1-168",
+      "value": {
+        "path": "childrenUnder14[4].givenNames"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[4]"
+        ]
+      }
+    },
+    {
+      "field": "M1-169",
+      "value": {
+        "path": "childrenUnder14[4].sex"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[4]"
+        ]
+      }
+    },
+    {
+      "field": "M1-170",
+      "value": {
+        "path": "childrenUnder14[4].birthDate"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[4]"
+        ]
+      }
+    },
+    {
+      "field": "M1-171",
+      "value": {
+        "path": "childrenUnder14[4].birthCountry"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[4]"
+        ]
+      }
+    },
+    {
+      "field": "M1-172",
+      "value": {
+        "path": "childrenUnder14[4].citizenship"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[4]"
+        ]
+      }
+    },
+    {
+      "field": "M1-173",
+      "value": {
+        "path": "childrenUnder14[4].birthCity"
+      },
+      "when": {
+        "present": [
+          "childrenUnder14[4]"
+        ]
+      }
+    }
+  ]
+}

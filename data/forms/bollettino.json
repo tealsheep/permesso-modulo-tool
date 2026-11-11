@@ -1,0 +1,281 @@
+{
+  "form": "bollettino",
+  "source": "official/2026-11-05_bollettino_TD674_user_sample.jpg",
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "pageSize": {
+    "width": 1024,
+    "height": 315,
+    "unit": "image-px"
+  },
+  "fields": [
+    {
+      "id": "B-importo-1",
+      "page": 1,
+      "section": "PARTE 1",
+      "labelIt": "DI EURO",
+      "labelZh": "金额（数字）· 左联",
+      "kind": "parts",
+      "parts": [
+        {
+          "name": "euro",
+          "boxes": {
+            "x": 113.0,
+            "y": 253.0,
+            "w": 12.31,
+            "h": 14.5,
+            "count": 8,
+            "pitch": 13.312
+          }
+        },
+        {
+          "name": "centesimi",
+          "boxes": {
+            "x": 223.5,
+            "y": 253.0,
+            "w": 11.75,
+            "h": 14.5,
+            "count": 2,
+            "pitch": 12.75
+          }
+        }
+      ]
+    },
+    {
+      "id": "B-lettere-1",
+      "page": 1,
+      "section": "PARTE 1",
+      "labelIt": "IMPORTO IN LETTERE",
+      "labelZh": "金额（意大利文大写）· 左联",
+      "kind": "freetext",
+      "area": {
+        "x": 46,
+        "y": 226,
+        "w": 203,
+        "h": 11
+      }
+    },
+    {
+      "id": "B-importo-2",
+      "page": 1,
+      "section": "PARTE 2",
+      "labelIt": "DI EURO",
+      "labelZh": "金额（数字）· 中联",
+      "kind": "parts",
+      "parts": [
+        {
+          "name": "euro",
+          "boxes": {
+            "x": 367.0,
+            "y": 253.0,
+            "w": 12.38,
+            "h": 14.5,
+            "count": 8,
+            "pitch": 13.375
+          }
+        },
+        {
+          "name": "centesimi",
+          "boxes": {
+            "x": 478.0,
+            "y": 253.0,
+            "w": 11.75,
+            "h": 14.5,
+            "count": 2,
+            "pitch": 12.75
+          }
+        }
+      ]
+    },
+    {
+      "id": "B-lettere-2",
+      "page": 1,
+      "section": "PARTE 2",
+      "labelIt": "IMPORTO IN LETTERE",
+      "labelZh": "金额（意大利文大写）· 中联",
+      "kind": "freetext",
+      "area": {
+        "x": 300,
+        "y": 226,
+        "w": 202,
+        "h": 11
+      }
+    },
+    {
+      "id": "B-importo-3",
+      "page": 1,
+      "section": "PARTE 3",
+      "labelIt": "DI EURO",
+      "labelZh": "金额（数字）· 右联",
+      "kind": "parts",
+      "parts": [
+        {
+          "name": "euro",
+          "boxes": {
+            "x": 873.0,
+            "y": 276.5,
+            "w": 12.38,
+            "h": 14.0,
+            "count": 8,
+            "pitch": 13.375
+          }
+        },
+        {
+          "name": "centesimi",
+          "boxes": {
+            "x": 983.5,
+            "y": 276.5,
+            "w": 11.75,
+            "h": 14.0,
+            "count": 2,
+            "pitch": 12.75
+          }
+        }
+      ]
+    },
+    {
+      "id": "B-lettere-3",
+      "page": 1,
+      "section": "PARTE 3",
+      "labelIt": "IMPORTO IN LETTERE",
+      "labelZh": "金额（意大利文大写）· 右联",
+      "kind": "freetext",
+      "area": {
+        "x": 663,
+        "y": 249,
+        "w": 336,
+        "h": 11
+      }
+    },
+    {
+      "id": "B-eseguito-1",
+      "page": 1,
+      "section": "PARTE 1",
+      "labelIt": "ESEGUITO DA",
+      "labelZh": "缴款人姓名 · 左联",
+      "kind": "freetext",
+      "area": {
+        "x": 47,
+        "y": 188,
+        "w": 202,
+        "h": 11
+      }
+    },
+    {
+      "id": "B-residente-1",
+      "page": 1,
+      "section": "PARTE 1",
+      "labelIt": "RESIDENTE IN VIA",
+      "labelZh": "缴款人地址 · 左联",
+      "kind": "freetext",
+      "area": {
+        "x": 47,
+        "y": 172,
+        "w": 202,
+        "h": 11
+      }
+    },
+    {
+      "id": "B-eseguito-2",
+      "page": 1,
+      "section": "PARTE 2",
+      "labelIt": "ESEGUITO DA",
+      "labelZh": "缴款人姓名 · 中联",
+      "kind": "freetext",
+      "area": {
+        "x": 301,
+        "y": 188,
+        "w": 201,
+        "h": 11
+      }
+    },
+    {
+      "id": "B-residente-2",
+      "page": 1,
+      "section": "PARTE 2",
+      "labelIt": "RESIDENTE IN VIA",
+      "labelZh": "缴款人地址 · 中联",
+      "kind": "freetext",
+      "area": {
+        "x": 301,
+        "y": 172,
+        "w": 201,
+        "h": 11
+      }
+    },
+    {
+      "id": "B-eseguito-3",
+      "page": 1,
+      "section": "PARTE 3",
+      "labelIt": "ESEGUITO DA",
+      "labelZh": "缴款人姓名 · 右联",
+      "kind": "boxes",
+      "boxes": {
+        "x": 703.0,
+        "y": 142.5,
+        "w": 12.45,
+        "h": 14.5,
+        "count": 22,
+        "pitch": 13.455
+      },
+      "moreRows": [
+        {
+          "x": 703.0,
+          "y": 126.5,
+          "w": 12.45,
+          "h": 15.0,
+          "count": 22,
+          "pitch": 13.455
+        }
+      ]
+    },
+    {
+      "id": "B-residente-3",
+      "page": 1,
+      "section": "PARTE 3",
+      "labelIt": "RESIDENTE IN VIA - PIAZZA",
+      "labelZh": "缴款人地址 · 右联",
+      "kind": "boxes",
+      "boxes": {
+        "x": 703.0,
+        "y": 100.5,
+        "w": 12.45,
+        "h": 14.5,
+        "count": 22,
+        "pitch": 13.455
+      }
+    },
+    {
+      "id": "B-cap-3",
+      "page": 1,
+      "section": "PARTE 3",
+      "labelIt": "CAP",
+      "labelZh": "邮编 · 右联",
+      "kind": "boxes",
+      "boxes": {
+        "x": 703.0,
+        "y": 74.5,
+        "w": 12.2,
+        "h": 14.0,
+        "count": 5,
+        "pitch": 13.2
+      }
+    },
+    {
+      "id": "B-localita-3",
+      "page": 1,
+      "section": "PARTE 3",
+      "labelIt": "LOCALITA'",
+      "labelZh": "城市 · 右联",
+      "kind": "boxes",
+      "boxes": {
+        "x": 784.0,
+        "y": 74.5,
+        "w": 12.44,
+        "h": 14.0,
+        "count": 16,
+        "pitch": 13.438
+      }
+    }
+  ]
+}

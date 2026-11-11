@@ -1,0 +1,169 @@
+{
+  "form": "bollettino",
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "rules": [
+    {
+      "field": "B-importo-1",
+      "value": {
+        "parts": {
+          "euro": {
+            "computed": "fee.euro"
+          },
+          "centesimi": {
+            "computed": "fee.cents"
+          }
+        }
+      }
+    },
+    {
+      "field": "B-lettere-1",
+      "value": {
+        "computed": "fee.words"
+      }
+    },
+    {
+      "field": "B-eseguito-1",
+      "value": {
+        "join": [
+          {
+            "path": "person.surname"
+          },
+          {
+            "path": "person.givenNames"
+          }
+        ],
+        "sep": " "
+      }
+    },
+    {
+      "field": "B-residente-1",
+      "value": {
+        "join": [
+          {
+            "path": "address.street"
+          },
+          {
+            "path": "address.civic.numero"
+          },
+          {
+            "path": "address.civic.lettera"
+          }
+        ],
+        "sep": " "
+      }
+    },
+    {
+      "field": "B-importo-2",
+      "value": {
+        "parts": {
+          "euro": {
+            "computed": "fee.euro"
+          },
+          "centesimi": {
+            "computed": "fee.cents"
+          }
+        }
+      }
+    },
+    {
+      "field": "B-lettere-2",
+      "value": {
+        "computed": "fee.words"
+      }
+    },
+    {
+      "field": "B-eseguito-2",
+      "value": {
+        "join": [
+          {
+            "path": "person.surname"
+          },
+          {
+            "path": "person.givenNames"
+          }
+        ],
+        "sep": " "
+      }
+    },
+    {
+      "field": "B-residente-2",
+      "value": {
+        "join": [
+          {
+            "path": "address.street"
+          },
+          {
+            "path": "address.civic.numero"
+          },
+          {
+            "path": "address.civic.lettera"
+          }
+        ],
+        "sep": " "
+      }
+    },
+    {
+      "field": "B-importo-3",
+      "value": {
+        "parts": {
+          "euro": {
+            "computed": "fee.euro"
+          },
+          "centesimi": {
+            "computed": "fee.cents"
+          }
+        }
+      }
+    },
+    {
+      "field": "B-lettere-3",
+      "value": {
+        "computed": "fee.words"
+      }
+    },
+    {
+      "field": "B-eseguito-3",
+      "value": {
+        "join": [
+          {
+            "path": "person.surname"
+          },
+          {
+            "path": "person.givenNames"
+          }
+        ],
+        "sep": " "
+      }
+    },
+    {
+      "field": "B-residente-3",
+      "value": {
+        "join": [
+          {
+            "path": "address.street"
+          },
+          {
+            "path": "address.civic.numero"
+          },
+          {
+            "path": "address.civic.lettera"
+          }
+        ],
+        "sep": " "
+      }
+    },
+    {
+      "field": "B-cap-3",
+      "value": {
+        "path": "address.cap"
+      }
+    },
+    {
+      "field": "B-localita-3",
+      "value": {
+        "path": "address.comune"
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "30",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1 e 2)",
+      "nameZh": "填好并签名的申请表（Modulo 1 和 2）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Documentazione attestante il conseguimento del titolo di studio (o, se non ancora disponibile, da presentare entro 60 giorni)",
+      "nameZh": "学位 / 文凭证明（还没拿到的，可在申请后 60 天内补交）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Documentazione attestante la disponibilità di mezzi economici sufficienti per la durata del permesso",
+      "nameZh": "证明居留期内有足够生活费用的文件（如银行存款证明、奖学金证明）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia della polizza assicurativa (malattia e infortuni) valida in Italia per la durata del permesso",
+      "nameZh": "在意大利有效、覆盖整个居留期的医疗和意外保险单复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Certificazione della dichiarazione resa al centro per l'impiego (DID)",
+      "nameZh": "在职业介绍中心（centro per l'impiego）登记的证明（DID）",
+      "basis": "official"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.vitest/
+coverage/
+tmp/
+output/
+.env
+.env.*
+!.env.example
+
+# D35：官方 Modulo 2 PDF 禁止复制和修改，不进入仓库（本地下载方式见 official/SOURCES.md）
+official/*Modulo_2.pdf
+
+# 浏览器测试时 Chromium 生成的日志
+debug.log

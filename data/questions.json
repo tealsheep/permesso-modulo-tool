@@ -1,0 +1,1118 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "note": "问卷文案（Claude 维护）。fields 按资料路径（docs/DATA-MODEL.md）给出 label / hint / help；spouse.* 和 childrenUnder14[].* 没有单独条目时沿用 person.*。sections 按分节标题给出 (?) 说明，标题以数字结尾的（如“过去六年住址 2”）按去掉数字后的前缀匹配。defaults 在字段为空时预填，用户可以改。",
+  "fields": {
+    "questura.city": {
+      "label": "交给哪个 Questura",
+      "hint": "选你住的那个省的 Questura，不是你住的小城镇。可以直接打省份缩写或城市名，例如住在 Viareggio（属 Lucca 省）打 LU 或 Lucca。",
+      "help": "每个省只有一个 Questura。名字写在 Modulo 1、Modulo 2 第 1 页最上方「Al Signor Questore di」后面，省份缩写写在右边「Sigla Provincia」两格里，选好后两项都会自动填。"
+    },
+    "questura.province": {
+      "label": "Questura 所在省缩写",
+      "hint": "选好 Questura 后自动填，不用单独选。",
+      "help": "写在第 1 页抬头「Sigla Provincia」的两个格子里。"
+    },
+    "currentPermit.number": {
+      "label": "现在这张居留的卡号",
+      "hint": "居留卡正面印的号码，照卡上原样抄写，字母和数字都要。",
+      "help": "对应 Modulo 1 第 18 栏，最多 14 格。首次申请长居时写你现在持有的居留卡号。"
+    },
+    "currentPermit.typeCode": {
+      "label": "现在这张居留的类型",
+      "hint": "续签时就是你现在这张居留的类型，已按你选的申请自动填好；不对再改。办转换或第一次办这一类的，填你现在手上那张居留的类型。",
+      "help": "对应 Modulo 1 第 19 栏，填两位数的类型代码。"
+    },
+    "currentPermit.validUntil": {
+      "label": "现在这张居留的到期日",
+      "hint": "居留卡上的到期日期（scadenza）。",
+      "help": "对应 Modulo 1 第 20 栏。法律规定续签要在到期前 90 天申请（2026 年 5 月起，原来是 60 天），尽早交表；过期超过 60 天的不能再用邮局 kit，要直接去 Questura。"
+    },
+    "application.aggiornamentoReasons": {
+      "label": "这次要更新哪些信息？",
+      "hint": "可以多选。",
+      "help": "只是换住址、孩子在意大利出生或更新照片时，一般只需要填 Modulo 1，不用另附证明。换护照要附新护照复印件。",
+      "options": [
+        {
+          "value": "domicilio",
+          "label": "换住址 · Cambio domicilio"
+        },
+        {
+          "value": "stato-civile",
+          "label": "婚姻状况变了 · Stato civile"
+        },
+        {
+          "value": "figli-nati-italia",
+          "label": "加孩子（在意大利出生）· Inserimento figli"
+        },
+        {
+          "value": "figli-ingresso",
+          "label": "加孩子（从国外入境）· Inserimento figli"
+        },
+        {
+          "value": "passaporto",
+          "label": "换护照 · Cambio passaporto"
+        },
+        {
+          "value": "anagrafica",
+          "label": "改身份信息 · Variazioni anagrafiche"
+        },
+        {
+          "value": "foto",
+          "label": "更新照片 · Aggiornamento foto"
+        }
+      ]
+    },
+    "application.expectedDurationMonths": {
+      "label": "预计能批几个月",
+      "hint": "只用来算缴费金额。不确定就按合同、学校注册或其他证明上的期限填，或在邮局窗口确认。",
+      "help": "3 个月以内只交 €30,46，1 年以内交 €70,46，超过 1 年交 €80,46。"
+    },
+    "application.submissionTotalSheets": {
+      "label": "表格和复印件一共几页",
+      "hint": "复印完再数。也可以留空，交表前在纸质表第 25 栏手写。",
+      "help": "包括你填的 Modulo 1、Modulo 2 和所有复印件的总页数。签名和日期留到交表当天再写。"
+    },
+    "person.surname": {
+      "label": "姓",
+      "hint": "照护照照片页的「姓 / Surname」拼音抄写。",
+      "help": "对应第 3 栏。和护照一模一样，字母不能多也不能少。"
+    },
+    "person.givenNames": {
+      "label": "名",
+      "hint": "照护照照片页的「名 / Given names」抄写；护照上连写就连写（如 XIAOMING），分开就分开。",
+      "help": "对应第 4 栏。"
+    },
+    "person.sex": {
+      "label": "性别",
+      "hint": "",
+      "help": "对应第 33 栏，表上写一个字母：M 男，F 女。",
+      "options": [
+        {
+          "value": "M",
+          "label": "男 · M (Maschio)"
+        },
+        {
+          "value": "F",
+          "label": "女 · F (Femmina)"
+        }
+      ]
+    },
+    "person.birthDate": {
+      "label": "出生日期",
+      "hint": "和护照上一致。",
+      "help": "对应第 34 栏，按「日 / 月 / 年」分三组格子填写。"
+    },
+    "person.birthCountry": {
+      "label": "出生国家",
+      "hint": "在中国大陆出生选「中国」。在港澳台或其他地方出生的，按护照选。",
+      "help": "对应第 35 栏，填 3 个字母的国家代码（中国是 CHN），工具会自动换成代码。"
+    },
+    "person.citizenship": {
+      "label": "国籍",
+      "hint": "按护照上的国籍。",
+      "help": "对应第 36 栏，填 3 个字母的国家代码。"
+    },
+    "person.birthCity": {
+      "label": "出生地",
+      "hint": "照护照「出生地点 / Place of birth」的拼音写。中国护照上一般只写省份，例如 ZHEJIANG，照抄就行。",
+      "help": "对应第 38 栏。只能写拉丁字母，不能写汉字；工具不会把汉字自动转成拼音。"
+    },
+    "person.maritalStatus": {
+      "label": "婚姻状况",
+      "hint": "离婚、丧偶也选「未婚」。",
+      "help": "对应第 32 栏：A 表示 Stato libero（未婚、离婚、丧偶），B 表示 Coniugato/a（已婚）。",
+      "options": [
+        {
+          "value": "A",
+          "label": "未婚 / 离婚 / 丧偶 · A (Stato libero)"
+        },
+        {
+          "value": "B",
+          "label": "已婚 · B (Coniugato/a)"
+        }
+      ]
+    },
+    "person.codiceFiscale": {
+      "label": "税号（Codice fiscale）",
+      "hint": "医疗卡（Tessera sanitaria）正面或税号卡上的 16 位字母和数字。没有可以不填。",
+      "help": "对应第 31 栏。工具会核对它和你的姓名、出生日期、性别是否对得上，但不能确认是否由官方发放。"
+    },
+    "person.refugee": {
+      "label": "你是难民身份吗？",
+      "hint": "只有被认定为难民（rifugiato）才选「是」。绝大多数人选「否」。",
+      "help": "对应第 37 栏。"
+    },
+    "document.kind": {
+      "label": "用什么证件申请",
+      "hint": "绝大多数人选护照。",
+      "help": "对应第 40、41 栏。必须是你交表时带去邮局的那本证件。",
+      "options": [
+        {
+          "value": "passport",
+          "label": "护照 · Passaporto"
+        },
+        {
+          "value": "other",
+          "label": "其他旅行证件 · Altro documento"
+        }
+      ]
+    },
+    "document.otherCode": {
+      "label": "其他证件的种类",
+      "hint": "",
+      "help": "对应第 42 栏，填说明书附表 4 的代码。"
+    },
+    "document.otherName": {
+      "label": "其他证件的名称",
+      "hint": "列表里没有你的证件时才填。",
+      "help": "对应第 43 栏。"
+    },
+    "document.issuerCode": {
+      "label": "其他证件的签发机关",
+      "hint": "",
+      "help": "对应第 46 栏，填说明书附表 5 的代码。护照不用填。"
+    },
+    "document.number": {
+      "label": "护照号码",
+      "hint": "护照照片页右上角的「护照号 / Passport No.」，中国护照一般是 E、EA、EB 等字母开头加数字。",
+      "help": "对应第 44 栏。换了新护照就写新护照的号码。"
+    },
+    "document.validUntil": {
+      "label": "护照有效期至",
+      "hint": "护照照片页的「有效期至 / Date of expiry」。",
+      "help": "对应第 45 栏。护照快过期的，最好先换护照再办居留。"
+    },
+    "address.province": {
+      "label": "住址所在省（缩写）",
+      "hint": "这是你住的 Comune 所属的省，和「交给哪个 Questura」分开填，例如住 Viareggio 选 LU · Lucca。",
+      "help": "对应第 66 栏，也会填进第 5 栏（住所所在省）。"
+    },
+    "address.comune": {
+      "label": "住址所在城市（Comune）",
+      "hint": "按租房合同或居住证明上的 Comune 写，例如 PRATO。",
+      "help": "对应第 67 栏，也会填进第 6 栏（住所所在市镇）。"
+    },
+    "address.street": {
+      "label": "街道",
+      "hint": "写街道类型和名称，例如 VIA ROMA、VIALE DELLA REPUBBLICA。门牌号在下一格。",
+      "help": "对应第 68 栏，最多两行共 60 格。"
+    },
+    "address.civic.numero": {
+      "label": "门牌号",
+      "hint": "只写数字部分，例如 12。",
+      "help": "对应第 69 栏「numero」部分。"
+    },
+    "address.civic.lettera": {
+      "label": "门牌字母",
+      "hint": "例如 12/A 的 A。没有就空着。",
+      "help": "对应第 69 栏「lettera」部分。"
+    },
+    "address.scala": {
+      "label": "楼梯（Scala）",
+      "hint": "楼里分 A、B 楼梯时才填。",
+      "help": "对应第 70 栏。"
+    },
+    "address.interno": {
+      "label": "室号（Interno）",
+      "hint": "门铃或信箱上的室号，没有可以空着。",
+      "help": "对应第 71 栏。"
+    },
+    "address.cap": {
+      "label": "邮编（CAP）",
+      "hint": "5 位数字。",
+      "help": "对应第 72 栏。"
+    },
+    "address.email": {
+      "label": "电子邮箱",
+      "hint": "Questura 可能用它联系你。",
+      "help": "对应第 73 栏。"
+    },
+    "address.phoneFixed.prefisso": {
+      "label": "区号",
+      "hint": "",
+      "help": ""
+    },
+    "address.phoneFixed.numero": {
+      "label": "号码",
+      "hint": "",
+      "help": ""
+    },
+    "address.phoneMobile.prefisso": {
+      "label": "前缀",
+      "hint": "",
+      "help": ""
+    },
+    "address.phoneMobile.numero": {
+      "label": "号码",
+      "hint": "",
+      "help": ""
+    },
+    "mailToDifferent": {
+      "label": "收信地址",
+      "paper": "Modulo 1 · 第 8 节（第 76–84 栏）· RECAPITO PER EVENTUALI COMUNICAZIONI",
+      "hint": "Questura 的通知信寄到哪里。和住址相同时，纸质表第 8 节整节留空。",
+      "help": "官方说明：第 8 节和上面的住址一样就不用填（Se uguale al precedente non compilare）。想让信寄到别的地址，或由别人、公司代收时，选「使用其他地址」。来回切换不会丢掉已经填的内容。",
+      "options": [
+        {
+          "value": "false",
+          "label": "与住址相同"
+        },
+        {
+          "value": "true",
+          "label": "使用其他地址"
+        }
+      ]
+    },
+    "mailTo.presso": {
+      "label": "代收人（Presso）",
+      "hint": "信由别人或公司代收时，写代收人的姓名或公司名。自己收就空着。",
+      "help": "对应第 77 栏。"
+    },
+    "mailTo.province": {
+      "label": "收信地址所在省（缩写）",
+      "hint": "收信地址那个 Comune 所属的省，可以直接打缩写。",
+      "help": "对应第 78 栏。"
+    },
+    "mailTo.comune": {
+      "label": "收信地址所在城市（Comune）",
+      "hint": "",
+      "help": "对应第 79 栏。"
+    },
+    "mailTo.street": {
+      "label": "收信地址街道",
+      "hint": "",
+      "help": "对应第 80 栏。"
+    },
+    "mailTo.civic.numero": {
+      "label": "门牌号",
+      "hint": "",
+      "help": "对应第 81 栏。"
+    },
+    "mailTo.civic.lettera": {
+      "label": "门牌字母",
+      "hint": "",
+      "help": "对应第 81 栏。"
+    },
+    "mailTo.scala": {
+      "label": "楼梯（Scala）",
+      "hint": "",
+      "help": "对应第 82 栏。"
+    },
+    "mailTo.interno": {
+      "label": "室号（Interno）",
+      "hint": "",
+      "help": "对应第 83 栏。"
+    },
+    "mailTo.cap": {
+      "label": "邮编（CAP）",
+      "hint": "5 位数字。",
+      "help": "对应第 84 栏。"
+    },
+    "housing.idoneita.date": {
+      "label": "住房适宜证明的签发日期",
+      "hint": "证明（idoneità alloggiativa）上的日期。",
+      "help": "对应第 87 栏。"
+    },
+    "housing.idoneita.issuer": {
+      "label": "住房适宜证明是谁开的",
+      "hint": "一般是 Comune，个别地方由 ASL 开。看证明抬头。",
+      "help": "对应第 88 栏（Comune）或第 91 栏（ASL）。",
+      "options": [
+        {
+          "value": "comune",
+          "label": "市政府 · Comune"
+        },
+        {
+          "value": "asl",
+          "label": "卫生局 · ASL"
+        }
+      ]
+    },
+    "housing.idoneita.province": {
+      "label": "住房适宜证明签发地所在省（缩写）",
+      "hint": "",
+      "help": "对应第 89 栏或第 92 栏。"
+    },
+    "housing.idoneita.comuneOrAsl": {
+      "label": "签发的 Comune 或 ASL 名称",
+      "hint": "例如 PRATO 或 ASL TOSCANA CENTRO。",
+      "help": "对应第 90 栏或第 93 栏。"
+    },
+    "housing.currentResidence.province": {
+      "label": "登记住址所在省（缩写）",
+      "hint": "看居住证明（certificato di residenza）。",
+      "help": "对应第 109 栏。"
+    },
+    "housing.currentResidence.comune": {
+      "label": "目前登记住址所在城市",
+      "hint": "",
+      "help": "对应第 110 栏。"
+    },
+    "housing.currentResidence.street": {
+      "label": "目前登记住址的街道和门牌",
+      "hint": "",
+      "help": "对应第 111 栏。"
+    },
+    "housing.pastResidences[].province": {
+      "label": "过去住址所在省（缩写）",
+      "hint": "",
+      "help": "第 96、99、102、105 栏。"
+    },
+    "housing.pastResidences[].comune": {
+      "label": "所在城市",
+      "hint": "",
+      "help": "第 97、100、103、106 栏。"
+    },
+    "housing.pastResidences[].street": {
+      "label": "街道和门牌",
+      "hint": "",
+      "help": "第 98、101、104、107 栏。"
+    },
+    "work.type": {
+      "label": "工作类型",
+      "hint": "",
+      "help": "对应 Modulo 2 第 4–6 栏。",
+      "options": [
+        {
+          "value": "subordinato",
+          "label": "雇佣工作 · Subordinato"
+        },
+        {
+          "value": "autonomo",
+          "label": "自雇工作 · Autonomo"
+        },
+        {
+          "value": "altro",
+          "label": "其他 · Altro"
+        }
+      ]
+    },
+    "work.contract": {
+      "label": "劳动合同类型",
+      "hint": "看劳动合同或雇佣登记（UNILAV）：tempo indeterminato 是无固定期限，tempo determinato 是固定期限。",
+      "help": "对应 Modulo 2 第 8–10 栏。也决定缴费金额。",
+      "options": [
+        {
+          "value": "indeterminato",
+          "label": "无固定期限 · Tempo indeterminato"
+        },
+        {
+          "value": "determinato",
+          "label": "固定期限 · Tempo determinato"
+        },
+        {
+          "value": "stagionale",
+          "label": "季节工 · Stagionale"
+        },
+        {
+          "value": "altro",
+          "label": "其他 · Altro"
+        }
+      ]
+    },
+    "work.contractMonths": {
+      "label": "合同期限（月）",
+      "hint": "固定期限合同写一共几个月。",
+      "help": "对应 Modulo 2 第 11 栏。"
+    },
+    "work.contractDays": {
+      "label": "额外天数",
+      "hint": "合同期限不是整月时，写多出的天数。",
+      "help": "对应 Modulo 2 第 13 栏。"
+    },
+    "work.contractOther": {
+      "label": "其他合同类型说明",
+      "hint": "",
+      "help": "对应 Modulo 2 第 12 栏。"
+    },
+    "work.autonomoForm": {
+      "label": "自雇的形式",
+      "hint": "",
+      "help": "对应 Modulo 2 第 15–18 栏。",
+      "options": [
+        {
+          "value": "titolare",
+          "label": "经营者 · Titolare",
+          "hint": "自己开店或个体经营"
+        },
+        {
+          "value": "socio",
+          "label": "合伙人 · Socio",
+          "hint": "在合伙公司或合作社里"
+        },
+        {
+          "value": "libero",
+          "label": "自由职业 · Libero professionista",
+          "hint": "律师、会计、翻译等"
+        },
+        {
+          "value": "altro",
+          "label": "其他 · Altro"
+        }
+      ]
+    },
+    "work.jobTitle": {
+      "label": "工种 / 职务",
+      "hint": "看工资单或合同上的 mansione / qualifica，例如 OPERAIO、CAMERIERE、COMMESSO。",
+      "help": "对应 Modulo 2 第 19 栏，写意大利文。"
+    },
+    "work.hiredThisYear": {
+      "label": "你是今年才入职这份工作的吗？",
+      "paper": "不写进表格 · 决定要带哪些材料",
+      "hint": "今年才开始这份工作、去年没有这份收入的选「是」：年收入可以空着，改填月收入，并带最近几个月的工资单。",
+      "help": ""
+    },
+    "work.contrattoSoggiornoStatus": {
+      "label": "你有单独的《居留合同》吗？",
+      "paper": "Modulo 2 · 第 33–40 栏 · CONTRATTO DI SOGGIORNO",
+      "hint": "居留合同（contratto di soggiorno）是凭工作签证第一次来意大利时，和雇主一起在 Sportello Unico 签的那份，不是普通劳动合同。",
+      "help": "2011 年 11 月 15 日以后换雇主时，新雇主的雇佣登记（UNILAV）已经代替了居留合同，不用再签、也不用寄给 Sportello Unico（劳动部 2011-11-28 第 4773 号通知）。所以只有现在的雇主就是入境时签合同的那位，才需要填这一节。",
+      "options": [
+        {
+          "value": "none",
+          "label": "没有 / 不清楚",
+          "hint": "例如凭家庭团聚、学习等其他方式来意大利。这一节跳过。"
+        },
+        {
+          "value": "same-employer",
+          "label": "有，现在还是同一个雇主",
+          "hint": "接着填签合同的省份和日期。"
+        },
+        {
+          "value": "changed",
+          "label": "有，但后来换了雇主",
+          "hint": "新雇主的 UNILAV 已经代替居留合同，这一节跳过。"
+        }
+      ]
+    },
+    "employer.kind": {
+      "label": "雇主是公司还是个人？",
+      "hint": "在家庭里做保姆、护工的，雇主一般是个人。",
+      "help": "对应 Modulo 2 第 21 栏（公司）或第 26 栏（个人）。",
+      "options": [
+        {
+          "value": "giuridica",
+          "label": "公司 / 法人 · Persona giuridica"
+        },
+        {
+          "value": "fisica",
+          "label": "个人雇主 · Persona fisica",
+          "hint": "例如在家庭里做保姆、护工"
+        }
+      ]
+    },
+    "employer.name": {
+      "label": "公司名称",
+      "hint": "看工资单抬头上的公司全称，例如 ESEMPIO SRL。",
+      "help": "对应 Modulo 2 第 22 栏。"
+    },
+    "employer.codiceFiscale": {
+      "label": "雇主税号",
+      "hint": "工资单上有。税号和增值税号填一个即可。",
+      "help": "对应 Modulo 2 第 23 栏（公司）或第 31 栏（个人）。"
+    },
+    "employer.partitaIva": {
+      "label": "雇主增值税号（Partita IVA）",
+      "hint": "11 位数字，工资单上有。",
+      "help": "对应 Modulo 2 第 24 栏（公司）或第 32 栏（个人）。"
+    },
+    "employer.inps": {
+      "label": "雇主 INPS 编号（Matricola）",
+      "hint": "工资单上的 Matricola INPS。不清楚可以问雇主或会计。",
+      "help": "对应 Modulo 2 第 25 栏。"
+    },
+    "employer.permitNumber": {
+      "label": "雇主的居留号码（如果雇主是外国人）",
+      "hint": "",
+      "help": "对应 Modulo 2 第 27 栏。"
+    },
+    "employer.surname": {
+      "label": "雇主的姓",
+      "hint": "",
+      "help": "对应 Modulo 2 第 28 栏。"
+    },
+    "employer.givenNames": {
+      "label": "雇主的名",
+      "hint": "",
+      "help": "对应 Modulo 2 第 29 栏。"
+    },
+    "employer.birthDate": {
+      "label": "雇主的出生日期",
+      "hint": "",
+      "help": "对应 Modulo 2 第 30 栏。"
+    },
+    "contrattoSoggiorno.mode": {
+      "label": "居留合同的签订方式",
+      "hint": "",
+      "help": "问卷里固定为「在 Sportello Unico 签订」（第 34 栏）。用挂号信寄出（第 37 栏）只适用于 2011 年以前换雇主的旧情况。"
+    },
+    "contrattoSoggiorno.province": {
+      "label": "在哪个省的 Sportello Unico 签的（缩写）",
+      "hint": "看居留合同上 Prefettura 的省份。",
+      "help": "对应 Modulo 2 第 35 栏。"
+    },
+    "contrattoSoggiorno.date": {
+      "label": "签订日期",
+      "hint": "看居留合同上的日期。",
+      "help": "对应 Modulo 2 第 36 栏。"
+    },
+    "contrattoSoggiorno.raccomandata.numero": {
+      "label": "挂号信号码",
+      "hint": "挂号信收据上的号码，前 11 位。",
+      "help": "对应 Modulo 2 第 39 栏，横线前的 11 格。"
+    },
+    "contrattoSoggiorno.raccomandata.controllo": {
+      "label": "挂号信号码最后一位",
+      "hint": "收据号码横线后面的那一位。",
+      "help": "对应 Modulo 2 第 39 栏，横线后的 1 格。"
+    },
+    "business.name": {
+      "label": "企业名称",
+      "hint": "看商会注册证明（visura camerale）上的名称。个体经营者一般是你的姓名。",
+      "help": "对应 Modulo 2 第 42 栏。"
+    },
+    "business.codiceFiscale": {
+      "label": "企业税号",
+      "hint": "个体经营者一般和你本人的税号相同。",
+      "help": "对应 Modulo 2 第 43 栏。"
+    },
+    "business.partitaIva": {
+      "label": "增值税号（Partita IVA）",
+      "hint": "11 位数字。",
+      "help": "对应 Modulo 2 第 44 栏。"
+    },
+    "business.inps": {
+      "label": "INPS 编号（Matricola）",
+      "hint": "不清楚可以问会计。",
+      "help": "对应 Modulo 2 第 45 栏。"
+    },
+    "business.cciaaProvince": {
+      "label": "商会注册所在省（缩写）",
+      "hint": "",
+      "help": "对应 Modulo 2 第 46 栏。"
+    },
+    "business.cciaaNumber": {
+      "label": "商会注册号（REA）",
+      "hint": "商会注册证明上的 REA 号码。",
+      "help": "对应 Modulo 2 第 47 栏。"
+    },
+    "business.cciaaDate": {
+      "label": "商会注册日期",
+      "hint": "",
+      "help": "对应 Modulo 2 第 48 栏。"
+    },
+    "business.albo": {
+      "label": "职业名册",
+      "hint": "律师、医生、流动摊贩等需要登记的职业才填，例如 AMBULANTI。",
+      "help": "对应 Modulo 2 第 49 栏。"
+    },
+    "business.alboDate": {
+      "label": "职业名册登记日期",
+      "hint": "",
+      "help": "对应 Modulo 2 第 50 栏。"
+    },
+    "income.annualCents": {
+      "label": "上一年的年收入（欧元）",
+      "hint": "填应税收入：CU 看第 1 栏；730 看结算表（prospetto di liquidazione）第 14 行。去年没有收入（今年才入职或今年才开始自雇）就空着，不要填 0。",
+      "help": "对应 Modulo 2 第 52、53 栏。取数方法依据 Prefettura 的收入说明。收入要达到 assegno sociale 的年额。 官方说明：今年才受雇的人填工资单和月收入（第 60–62 栏），今年才开始自雇的勾第 63 栏；这两种情况去年没有收入，第 52、53 栏留空。"
+    },
+    "income.lastTaxYear": {
+      "label": "最近一次报税是哪一年？",
+      "hint": "写收入所属的年份，例如 2025。",
+      "help": "对应 Modulo 2 第 54 栏。"
+    },
+    "income.taxForm": {
+      "label": "你用哪一种证明收入？",
+      "hint": "表格上印的是旧名称：CUD 就是现在的 CU（老叫法 101），UNICO PF 就是个人报税表（老叫法 740）。",
+      "help": "对应 Modulo 2 第 55–59 栏，打一个 X。表格上没有 730 这一项。官方说明里第 55–58 栏按报税表的种类勾，730 是个人报税，所以放在第 55 栏。拿不准的话，可以问帮你报税的 CAF。",
+      "options": [
+        {
+          "value": "cud",
+          "label": "CU / 101 · Certificazione Unica (CUD)",
+          "hint": "雇主每年给的收入证明，雇员最常用"
+        },
+        {
+          "value": "unico-pf",
+          "label": "730 或 740 · 个人报税 · Redditi PF (Unico PF)",
+          "hint": "自己（或找 CAF）报过税的"
+        },
+        {
+          "value": "unico-sp",
+          "label": "合伙公司报税 · Redditi SP (Unico SP)",
+          "hint": "snc、sas 等合伙公司"
+        },
+        {
+          "value": "unico-sc",
+          "label": "有限公司报税 · Redditi SC (Unico SC)",
+          "hint": "srl、spa 等公司"
+        },
+        {
+          "value": "unico-enc",
+          "label": "非营利机构报税 · Redditi ENC",
+          "hint": "一般用不到"
+        }
+      ]
+    },
+    "income.bustaPaga": {
+      "label": "附上工资单吗？",
+      "hint": "今年才入职、还没有 CU 的，用最近的工资单证明收入。",
+      "help": "对应 Modulo 2 第 60 栏。"
+    },
+    "income.bollettinoInps": {
+      "label": "附上 INPS 缴费单吗？",
+      "hint": "家政、护工等由家庭雇主缴社保的，常用 INPS 缴费单证明收入。",
+      "help": "对应 Modulo 2 第 61 栏。"
+    },
+    "income.monthlyCents": {
+      "label": "月收入（欧元）",
+      "hint": "今年才入职的必填：按最近的工资单或 INPS 缴费单写每月金额。",
+      "help": "对应 Modulo 2 第 62 栏。"
+    },
+    "income.autonomoStartedThisYear": {
+      "label": "自雇是今年才开始的吗？",
+      "hint": "今年才开始自雇、去年没有这份收入的选「是」：年收入可以空着。",
+      "help": "对应 Modulo 2 第 63 栏。"
+    },
+    "relatedApplication.spouse": {
+      "label": "这份申请和配偶的申请一起交吗？",
+      "hint": "配偶也同时办居留、一起交表时选「是」。",
+      "help": "对应 Modulo 1 第 113–115 栏。"
+    },
+    "relatedApplication.parent": {
+      "label": "这份申请和父母的申请一起交吗？",
+      "hint": "给年满 14 岁的孩子单独填表、和父母一起交时选「是」。",
+      "help": "对应 Modulo 1 第 116–118 栏。"
+    },
+    "dependents.cohabitingCount": {
+      "label": "和你同住、靠你抚养的有几个人？",
+      "hint": "不算你自己。",
+      "help": "对应 Modulo 1 第 120 栏。只在申请长居卡时填。"
+    },
+    "dependents.spouse": {
+      "label": "其中有配偶吗？",
+      "hint": "",
+      "help": "对应 Modulo 1 第 122 栏。"
+    },
+    "dependents.children": {
+      "label": "其中有子女吗？",
+      "hint": "",
+      "help": "对应 Modulo 1 第 123 栏。"
+    },
+    "dependents.childrenCount": {
+      "label": "子女人数",
+      "hint": "",
+      "help": "对应 Modulo 1 第 124 栏。"
+    },
+    "dependents.other": {
+      "label": "还有其他亲属吗？",
+      "hint": "例如父母。",
+      "help": "对应 Modulo 1 第 125 栏。"
+    },
+    "dependents.otherRelation": {
+      "label": "是什么亲属关系",
+      "hint": "用意大利文写，例如 MADRE、PADRE。",
+      "help": "对应 Modulo 1 第 126 栏。"
+    },
+    "family.childrenEnteredWithFamilyVisa": {
+      "label": "孩子是凭家庭团聚签证入境的吗？",
+      "hint": "选「是」的话，可以不交孩子的户籍证明。",
+      "help": ""
+    },
+    "childrenUnder14[].birthCity": {
+      "label": "出生地",
+      "hint": "在意大利出生的写出生的 Comune，例如 PRATO；在中国出生的照护照写。",
+      "help": "对应第 12 节的「Città di nascita」。"
+    },
+    "childrenUnder14[].birthCountry": {
+      "label": "出生国家",
+      "hint": "在意大利出生选「意大利」。",
+      "help": "对应第 12 节的「Codice Stato nascita」。"
+    },
+    "visa.entryDate": {
+      "label": "入境意大利日期",
+      "hint": "看护照上的入境章。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。"
+    },
+    "visa.border": {
+      "label": "入境口岸",
+      "hint": "入境的机场或口岸，例如 MILANO MALPENSA、ROMA FIUMICINO。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。"
+    },
+    "visa.number": {
+      "label": "签证号码",
+      "hint": "签证贴纸上的号码（一般在右上角）。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。"
+    },
+    "visa.type": {
+      "label": "签证类型",
+      "hint": "签证上 TYPE / TIPO 一栏，长期签证（学习、派遣、选择性居留等）一般是 D。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。"
+    },
+    "visa.entries": {
+      "label": "入境次数",
+      "hint": "看签证上的 NUMBER OF ENTRIES / NUMERO DI INGRESSI：1 是单次，MULT 是多次。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。",
+      "options": [
+        {
+          "value": "single",
+          "label": "单次 · Ingresso singolo"
+        },
+        {
+          "value": "multiple",
+          "label": "多次 · Ingresso multiplo"
+        }
+      ]
+    },
+    "visa.notes": {
+      "label": "签证备注 / 入境事由",
+      "hint": "照签证上 ANNOTAZIONI / REMARKS 一栏抄写，例如 STUDIO、MISSIONE。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。"
+    },
+    "visa.durationDays": {
+      "label": "签证天数",
+      "hint": "签证上 DURATION OF STAY / DURATA DEL SOGGIORNO 写的天数。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。"
+    },
+    "visa.validFrom": {
+      "label": "签证有效期自",
+      "hint": "签证上 FROM / DAL 的日期。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。"
+    },
+    "visa.validUntil": {
+      "label": "签证有效期至",
+      "hint": "签证上 UNTIL / AL 的日期。",
+      "help": "Modulo 1 第 5 节只在第一次申请居留时填写，照护照里的意大利签证抄。"
+    },
+    "employmentCentre.registrationDate": {
+      "label": "在职业介绍中心登记的日期",
+      "hint": "看 centro per l'impiego 给你的登记证明（DID）上的日期。",
+      "help": "失业、毕业或研究结束后找工作，要先到 centro per l'impiego 登记（也可以在 MyANPAL 网上做 DID）。Modulo 2 第 6 节填这次登记的信息。"
+    },
+    "employmentCentre.province": {
+      "label": "登记所在省（缩写）",
+      "hint": "职业介绍中心所在的省，可以直接打缩写，例如 MI。",
+      "help": "失业、毕业或研究结束后找工作，要先到 centro per l'impiego 登记（也可以在 MyANPAL 网上做 DID）。Modulo 2 第 6 节填这次登记的信息。"
+    },
+    "employmentCentre.city": {
+      "label": "登记所在城市",
+      "hint": "centro per l'impiego 所在的城市。",
+      "help": "失业、毕业或研究结束后找工作，要先到 centro per l'impiego 登记（也可以在 MyANPAL 网上做 DID）。Modulo 2 第 6 节填这次登记的信息。"
+    },
+    "employmentCentre.circoscrizione": {
+      "label": "片区（circoscrizione）",
+      "hint": "登记证明上写了才填，没有就空着。",
+      "help": "失业、毕业或研究结束后找工作，要先到 centro per l'impiego 登记（也可以在 MyANPAL 网上做 DID）。Modulo 2 第 6 节填这次登记的信息。"
+    },
+    "family.sponsorPermitValidUntil": {
+      "label": "担保你的家属的居留到期日",
+      "hint": "家庭居留跟着这位家属的居留走，一起续签。看他居留卡上的到期日；他这次也一起续签的，填他新居留的预计到期日。",
+      "help": "只用来估算你的居留期限和缴费金额：3 个月以内只交 €30,46，1 年以内交 €70,46，超过 1 年交 €80,46。不确定请在邮局窗口确认。",
+      "paper": "不写进表格 · 用来算缴费金额"
+    },
+    "study.working": {
+      "label": "你现在有打工收入吗？",
+      "hint": "学生每周最多可以打工 20 小时、每年最多 1 040 小时。",
+      "help": "有工作收入的学生可以另填 Modulo 2 证明收入；没有的只填 Modulo 1，另附生活费用证明（如存款证明、奖学金证明）。",
+      "paper": "不写进表格 · 决定要不要填 Modulo 2"
+    },
+    "family.sponsorKind": {
+      "label": "你要和哪一类家属团聚？",
+      "hint": "看这位家属的身份证件或居留卡。",
+      "help": "家属是在意大利合法居留的外国人的，要另交他的报税单和住房适宜证明；家属是意大利或欧盟公民、或被承认的难民的，只要证明亲属关系的文件。",
+      "paper": "不写进表格 · 决定材料清单",
+      "options": [
+        {
+          "value": "straniero",
+          "label": "在意大利合法居留的外国人 · Straniero regolarmente soggiornante"
+        },
+        {
+          "value": "italiano-ue",
+          "label": "意大利或欧盟公民 · Cittadino italiano o UE"
+        },
+        {
+          "value": "rifugiato",
+          "label": "被承认的难民 · Rifugiato"
+        }
+      ]
+    },
+    "application.art27Letter": {
+      "label": "你属于第 27 条的哪一类？",
+      "hint": "看第一次签发时的工作许可（nulla osta）或居留合同；不确定就问雇主。",
+      "help": "A、B、C、D、E、O、P、R 续签要另交 Modulo 2，其余只要 Modulo 1。A 类的 contributo 按 €100 收（合计 €130,46），其余按期限。马戏团和巡回演出人员（L）官方没有写续签办法，本工具不支持；打工度假直接去 Questura 办。",
+      "paper": "不写进表格 · 决定要不要 Modulo 2、费用和材料清单",
+      "options": [
+        {
+          "value": "a",
+          "label": "A 公司高管或高技能人员 · Dirigenti o personale altamente specializzato"
+        },
+        {
+          "value": "b",
+          "label": "B 大学交换或母语外语讲师 · Lettori universitari di scambio o di madre lingua"
+        },
+        {
+          "value": "c",
+          "label": "C 大学教授、研究人员 · Professori universitari e ricercatori"
+        },
+        {
+          "value": "d",
+          "label": "D 笔译、口译 · Traduttori ed interpreti"
+        },
+        {
+          "value": "e",
+          "label": "E 随雇主迁来的家政人员 · Collaboratori familiari"
+        },
+        {
+          "value": "f",
+          "label": "F 职业培训、受训 · Formazione professionale"
+        },
+        {
+          "value": "i",
+          "label": "I 国外公司派来做承包工程的员工 · Lavoratori dipendenti da datori all’estero"
+        },
+        {
+          "value": "m",
+          "label": "M 歌剧、戏剧、音乐会、芭蕾的演出和技术人员 · Personale artistico e tecnico per spettacoli"
+        },
+        {
+          "value": "n",
+          "label": "N 娱乐场所的舞者、艺人、乐手 · Ballerini, artisti e musicisti"
+        },
+        {
+          "value": "o",
+          "label": "O 受雇于音乐、戏剧、电影、电台电视机构的艺人 · Artisti per enti musicali, teatrali, cinematografici, radio-TV"
+        },
+        {
+          "value": "p",
+          "label": "P 职业运动员 · Attività sportive professionistiche"
+        },
+        {
+          "value": "q",
+          "label": "Q 驻意大利的外国记者 · Giornalisti corrispondenti accreditati"
+        },
+        {
+          "value": "r",
+          "label": "R 青年交流项目中的研究、临时工作或互惠生 · Scambi o mobilità di giovani, alla pari"
+        },
+        {
+          "value": "r-bis",
+          "label": "R bis 医疗机构聘用的护士 · Infermieri"
+        }
+      ]
+    }
+  },
+  "groups": {
+    "address.phoneFixed": {
+      "label": "固定电话",
+      "hint": "左边写区号（例如米兰 02、佛罗伦萨 055），右边写其余号码。",
+      "help": "对应第 74 栏：左边 4 格写区号，右边 12 格写号码。",
+      "parts": [
+        "prefisso",
+        "numero"
+      ]
+    },
+    "address.phoneMobile": {
+      "label": "手机号",
+      "hint": "意大利手机号，例如 351 6655665，不写 +39。直接粘贴整串号码会自动拆成两段。",
+      "help": "对应第 75 栏：左边 4 格写开头的 3 位，右边 12 格写其余号码。Questura 可能用短信通知你预约。",
+      "parts": [
+        "prefisso",
+        "numero"
+      ]
+    }
+  },
+  "sections": {
+    "受理地": "表格要交给你住所所在省的 Questura。这两项写在每份表第 1 页最上面。",
+    "现有居留": "照你现在持有的居留卡填写。",
+    "更新原因": "按实际要更新的内容选择，材料清单会跟着变化。",
+    "姓名与出生资料": "全部照护照照片页填写，拼写和护照完全一致。表上只能写拉丁字母。",
+    "婚姻与税号": "税号在医疗卡（Tessera sanitaria）上。没有税号也可以交表。",
+    "身份证件": "用你交表时带去邮局的证件。邮局窗口会核对原件。",
+    "在意大利的住址": "写你现在实际住的地址，Questura 会把预约信寄到这里。",
+    "联系方式": "都是选填，但留手机号可以收到 Questura 的短信通知。",
+    "收信地址": "对应 Modulo 1 第 8 节。和住址相同就整节留空；选「使用其他地址」后，省、Comune、街道、邮编要填全。",
+    "住房适宜证明": "申请长居卡要附住房适宜证明（idoneità alloggiativa），一般向 Comune 申请。",
+    "目前登记住址": "你在 Comune 登记的居住地址（residenza），看居住证明。",
+    "过去六年住址": "申请长居卡要写过去六年住过的地方，最多 4 处，从最近的开始写。",
+    "工作情况": "按劳动合同或商会注册信息填写。",
+    "雇主资料": "这些信息在工资单（busta paga）上都能找到，不清楚可以问雇主或会计。",
+    "居留合同（如有）": "只有凭工作签证入境、并且现在还是入境时那位雇主的人才需要填。换过雇主的，新雇主的雇佣登记（UNILAV）已经代替了居留合同。",
+    "经营资料": "看商会注册证明（visura camerale）和增值税号登记。",
+    "收入与报税": "用上一年的 CU 或报税单证明收入；今年才入职的，用最近的工资单。",
+    "关联申请": "配偶或孩子和你同时交表时用到。",
+    "同住受抚养家属": "只在申请长居卡时填写，写和你同住、靠你抚养的家人。",
+    "配偶资料": "照配偶的护照填写。",
+    "未满 14 岁子女": "未满 14 岁的孩子写进你的 Modulo 1 第 12 节，不用单独填表，但要另交一张 €30,46 的缴费单。",
+    "子女材料": "决定材料清单里要不要加孩子的户籍证明。",
+    "提交前": "签名（FIRMA）和日期（DATA）留到交表当天在纸质表上写。",
+    "签证信息": "照护照里的意大利签证填写。只有第一次申请居留时才填这一节。",
+    "职业介绍中心登记": "填你在 centro per l'impiego 登记的信息，看登记证明（DID）。",
+    "担保家属": "家庭居留跟着担保你的家属走。这里的信息不写进表格，只用来算缴费金额。",
+    "学习与打工": "决定要不要另填 Modulo 2。",
+    "要团聚的家属": "决定材料清单里要不要交家属的报税单和住房适宜证明。这里的信息不写进表格。",
+    "居留期限": "只用来算缴费金额，不写进表格。不确定就按 12 个月，或在邮局窗口确认。",
+    "特殊工作类别": "决定要不要填 Modulo 2、交多少钱和要附哪些材料。这里的信息不写进表格。"
+  },
+  "defaults": [
+    {
+      "path": "currentPermit.typeCode",
+      "value": {
+        "fromPath": "currentPermit.typeCode"
+      },
+      "when": {
+        "applicationCodes": [
+          "05"
+        ]
+      }
+    },
+    {
+      "path": "currentPermit.typeCode",
+      "value": {
+        "fromPath": "application.code"
+      },
+      "when": {
+        "operations": [
+          "rinnovo"
+        ]
+      }
+    },
+    {
+      "path": "currentPermit.typeCode",
+      "value": {
+        "const": "09"
+      },
+      "when": {
+        "applicationCodes": [
+          "03"
+        ]
+      }
+    },
+    {
+      "path": "document.kind",
+      "value": {
+        "const": "passport"
+      }
+    },
+    {
+      "path": "contrattoSoggiorno.mode",
+      "value": {
+        "const": "sottoscritto"
+      },
+      "when": {
+        "equals": {
+          "work.contrattoSoggiornoStatus": "same-employer"
+        }
+      }
+    },
+    {
+      "path": "person.birthCountry",
+      "value": {
+        "const": "CHN"
+      }
+    },
+    {
+      "path": "person.citizenship",
+      "value": {
+        "const": "CHN"
+      }
+    },
+    {
+      "path": "person.refugee",
+      "value": {
+        "const": true
+      },
+      "when": {
+        "applicationCodes": [
+          "07"
+        ]
+      }
+    },
+    {
+      "path": "person.refugee",
+      "value": {
+        "const": false
+      }
+    },
+    {
+      "path": "address.province",
+      "value": {
+        "fromPath": "questura.province"
+      }
+    },
+    {
+      "path": "childrenUnder14[].citizenship",
+      "value": {
+        "fromPath": "person.citizenship"
+      }
+    },
+    {
+      "path": "currentPermit.typeCode",
+      "value": {
+        "const": "09"
+      },
+      "when": {
+        "applicationCodes": [
+          "11"
+        ]
+      }
+    },
+    {
+      "path": "application.expectedDurationMonths",
+      "value": {
+        "const": 12
+      },
+      "when": {
+        "applicationCodes": [
+          "24",
+          "31",
+          "05",
+          "21",
+          "06",
+          "32",
+          "33",
+          "19",
+          "20",
+          "27",
+          "29",
+          "23",
+          "17"
+        ]
+      }
+    },
+    {
+      "path": "work.type",
+      "value": {
+        "const": "subordinato"
+      },
+      "when": {
+        "applicationCodes": [
+          "16",
+          "18",
+          "17"
+        ]
+      }
+    },
+    {
+      "path": "work.type",
+      "value": {
+        "const": "autonomo"
+      },
+      "when": {
+        "applicationCodes": [
+          "15"
+        ]
+      }
+    },
+    {
+      "path": "work.contract",
+      "value": {
+        "const": "stagionale"
+      },
+      "when": {
+        "applicationCodes": [
+          "18"
+        ]
+      }
+    }
+  ]
+}

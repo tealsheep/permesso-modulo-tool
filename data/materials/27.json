@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "27",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1 e 2)",
+      "nameZh": "填好并签名的申请表（Modulo 1 和 2）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Fotocopia della convenzione di accoglienza rinnovata con l'Istituto di ricerca",
+      "nameZh": "和研究机构续签的接待协议（convenzione di accoglienza）复印件",
+      "basis": "official"
+    }
+  ]
+}

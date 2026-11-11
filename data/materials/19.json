@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "19",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1)",
+      "nameZh": "填好并签名的申请表（Modulo 1）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit",
+      "condition": {
+        "operations": [
+          "rinnovo"
+        ]
+      }
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Dichiarazione della Pubblica Amministrazione / Ente pubblico o privato / Organizzazione internazionale che attesti l'attualità dell'incarico",
+      "nameZh": "派遣单位（政府机关、公立或私立机构、国际组织）出具的任务仍在进行的声明",
+      "basis": "official",
+      "condition": {
+        "operations": [
+          "rinnovo"
+        ]
+      }
+    },
+    {
+      "nameIt": "Fotocopia del visto d'ingresso per missione",
+      "nameZh": "公务派遣签证页的复印件",
+      "basis": "common",
+      "condition": {
+        "operations": [
+          "rilascio"
+        ]
+      }
+    }
+  ]
+}

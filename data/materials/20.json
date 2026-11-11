@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "20",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1)",
+      "nameZh": "填好并签名的申请表（Modulo 1）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit",
+      "condition": {
+        "operations": [
+          "rinnovo"
+        ]
+      }
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Dichiarazione del responsabile della Comunità religiosa in Italia (natura dell'incarico, onere di vitto e alloggio), vistata dalla Curia vescovile o da equivalente Autorità religiosa",
+      "nameZh": "在意大利的宗教团体负责人出具的声明：说明担任的职务，并承担食宿费用；要经主教公署（Curia vescovile）或同等宗教机构签章",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia della polizza assicurativa (malattia e infortuni) valida in Italia per la durata del permesso",
+      "nameZh": "在意大利有效、覆盖整个居留期的医疗和意外保险单复印件",
+      "basis": "official"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "05",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1 e 2)",
+      "nameZh": "填好并签名的申请表（Modulo 1 和 2）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Certificazione della dichiarazione resa al centro per l'impiego, o comunicazione INPS di misura di sostegno al reddito (es. NASpI)",
+      "nameZh": "职业介绍中心（centro per l'impiego）的登记证明，或 INPS 发放失业补助（如 NASpI）的通知",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Lettera di licenziamento / dimissioni o comunicazione di cessazione del rapporto di lavoro",
+      "nameZh": "解雇信 / 辞职信或劳动关系终止通知",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Contratto di locazione o dichiarazione di ospitalità",
+      "nameZh": "租房合同或住宿证明（ospitalità）",
+      "basis": "common"
+    }
+  ]
+}

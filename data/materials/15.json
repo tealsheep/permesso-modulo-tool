@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "15",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1 e 2)",
+      "nameZh": "填好并签名的申请表（Modulo 1 和 2）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Fotocopia dell'autorizzazione, licenza, iscrizione ad albo o registro, o della dichiarazione prevista per l'attività svolta",
+      "nameZh": "从事该行业所需的许可、执照、职业名册登记或开业申报的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia dell'iscrizione alla CCIAA",
+      "nameZh": "商会（CCIAA）注册证明复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia della dichiarazione dei redditi",
+      "nameZh": "报税单复印件（收入不得低于 assegno sociale 年额）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Dichiarazione del Presidente della società sulle mansioni del socio, con fotocopia del documento d'identità del dichiarante",
+      "nameZh": "公司董事长出具的合伙人工作职责声明，附声明人身份证件复印件",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "work.autonomoForm": "socio"
+        }
+      }
+    },
+    {
+      "nameIt": "Fotocopia del libro soci (frontespizio e pagina con l'iscrizione del socio)",
+      "nameZh": "股东名册复印件（封面页 + 本人登记页）",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "work.autonomoForm": "socio"
+        }
+      }
+    },
+    {
+      "nameIt": "Contratto di locazione o dichiarazione di ospitalità",
+      "nameZh": "租房合同或住宿证明（ospitalità）",
+      "basis": "common"
+    }
+  ]
+}

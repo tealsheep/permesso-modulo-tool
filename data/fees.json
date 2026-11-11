@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "cardCents": 3046,
+  "postageCents": 3000,
+  "stampCents": 1600,
+  "rules": [
+    {
+      "id": "durata-minore",
+      "feeRule": "contributo-per-durata",
+      "priority": 100,
+      "when": {
+        "minor": true
+      },
+      "contributionCents": 0
+    },
+    {
+      "id": "durata-fino-1-anno",
+      "feeRule": "contributo-per-durata",
+      "priority": 10,
+      "when": {
+        "minDurationMonths": 4,
+        "maxDurationMonths": 12
+      },
+      "contributionCents": 4000
+    },
+    {
+      "id": "durata-oltre-1-anno",
+      "feeRule": "contributo-per-durata",
+      "priority": 10,
+      "when": {
+        "minDurationMonths": 13
+      },
+      "contributionCents": 5000
+    },
+    {
+      "id": "durata-fino-3-mesi",
+      "feeRule": "contributo-per-durata",
+      "priority": 10,
+      "when": {
+        "maxDurationMonths": 3
+      },
+      "contributionCents": 0
+    },
+    {
+      "id": "lungo-periodo-minore",
+      "feeRule": "lungo-periodo",
+      "priority": 100,
+      "when": {
+        "minor": true
+      },
+      "contributionCents": 0
+    },
+    {
+      "id": "lungo-periodo",
+      "feeRule": "lungo-periodo",
+      "priority": 10,
+      "when": {},
+      "contributionCents": 10000
+    },
+    {
+      "id": "senza-contributo",
+      "feeRule": "senza-contributo",
+      "priority": 10,
+      "when": {},
+      "contributionCents": 0
+    },
+    {
+      "id": "conversione-senza-contributo",
+      "feeRule": "contributo-per-durata",
+      "priority": 50,
+      "when": {
+        "operations": [
+          "conversione"
+        ]
+      },
+      "contributionCents": 0
+    },
+    {
+      "id": "art27-dirigenti",
+      "feeRule": "contributo-per-durata",
+      "priority": 60,
+      "when": {
+        "applicationCodes": [
+          "17"
+        ],
+        "equals": {
+          "application.art27Letter": "a"
+        }
+      },
+      "contributionCents": 10000
+    }
+  ]
+}

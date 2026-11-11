@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-07",
+  "table": "questure",
+  "source": "https://questure.poliziadistato.it/ （Polizia di Stato 官方 Questure 列表，2026-11-07 查看，106 个）",
+  "note": "每省一个 Questura。code 是 Questura 所在省的缩写，写在表头 Sigla Provincia；nameIt 写在「Al Signor Questore di」后面（按本工具惯例大写、不带重音）。aliases 只用于搜索。BT 在官方说明书的省份表里没有，但有自己的 Questura（D53）。撒丁岛只有 CA、NU、OR、SS 四个 Questura，Sud Sardegna 没有单独的 Questura。",
+  "entries": [
+    {
+      "code": "AG",
+      "nameIt": "AGRIGENTO"
+    },
+    {
+      "code": "AL",
+      "nameIt": "ALESSANDRIA"
+    },
+    {
+      "code": "AN",
+      "nameIt": "ANCONA"
+    },
+    {
+      "code": "AO",
+      "nameIt": "AOSTA",
+      "aliases": [
+        "AOSTE"
+      ]
+    },
+    {
+      "code": "AR",
+      "nameIt": "AREZZO"
+    },
+    {
+      "code": "AP",
+      "nameIt": "ASCOLI PICENO"
+    },
+    {
+      "code": "AT",
+      "nameIt": "ASTI"
+    },
+    {
+      "code": "AV",
+      "nameIt": "AVELLINO"
+    },
+    {
+      "code": "BA",
+      "nameIt": "BARI"
+    },
+    {
+      "code": "BT",
+      "nameIt": "BARLETTA ANDRIA TRANI",
+      "aliases": [
+        "BARLETTA",
+        "ANDRIA",
+        "TRANI"
+      ]
+    },
+    {
+      "code": "BL",
+      "nameIt": "BELLUNO"
+    },
+    {
+      "code": "BN",
+      "nameIt": "BENEVENTO"
+    },
+    {
+      "code": "BG",
+      "nameIt": "BERGAMO"
+    },
+    {
+      "code": "BI",
+      "nameIt": "BIELLA"
+    },
+    {
+      "code": "BO",
+      "nameIt": "BOLOGNA"
+    },
+    {
+      "code": "BZ",
+      "nameIt": "BOLZANO",
+      "aliases": [
+        "BOZEN"
+      ]
+    },
+    {
+      "code": "BS",
+      "nameIt": "BRESCIA"
+    },
+    {
+      "code": "BR",
+      "nameIt": "BRINDISI"
+    },
+    {
+      "code": "CA",
+      "nameIt": "CAGLIARI"
+    },
+    {
+      "code": "CL",
+      "nameIt": "CALTANISSETTA"
+    },
+    {
+      "code": "CB",
+      "nameIt": "CAMPOBASSO"
+    },
+    {
+      "code": "CE",
+      "nameIt": "CASERTA"
+    },
+    {
+      "code": "CT",
+      "nameIt": "CATANIA"
+    },
+    {
+      "code": "CZ",
+      "nameIt": "CATANZARO"
+    },
+    {
+      "code": "CH",
+      "nameIt": "CHIETI"
+    },
+    {
+      "code": "CO",
+      "nameIt": "COMO"
+    },
+    {
+      "code": "CS",
+      "nameIt": "COSENZA"
+    },
+    {
+      "code": "CR",
+      "nameIt": "CREMONA"
+    },
+    {
+      "code": "KR",
+      "nameIt": "CROTONE"
+    },
+    {
+      "code": "CN",
+      "nameIt": "CUNEO"
+    },
+    {
+      "code": "EN",
+      "nameIt": "ENNA"
+    },
+    {
+      "code": "FM",
+      "nameIt": "FERMO"
+    },
+    {
+      "code": "FE",
+      "nameIt": "FERRARA"
+    },
+    {
+      "code": "FI",
+      "nameIt": "FIRENZE"
+    },
+    {
+      "code": "FG",
+      "nameIt": "FOGGIA"
+    },
+    {
+      "code": "FC",
+      "nameIt": "FORLI CESENA",
+      "aliases": [
+        "FORLI",
+        "CESENA"
+      ]
+    },
+    {
+      "code": "FR",
+      "nameIt": "FROSINONE"
+    },
+    {
+      "code": "GE",
+      "nameIt": "GENOVA"
+    },
+    {
+      "code": "GO",
+      "nameIt": "GORIZIA"
+    },
+    {
+      "code": "GR",
+      "nameIt": "GROSSETO"
+    },
+    {
+      "code": "IM",
+      "nameIt": "IMPERIA"
+    },
+    {
+      "code": "IS",
+      "nameIt": "ISERNIA"
+    },
+    {
+      "code": "AQ",
+      "nameIt": "L'AQUILA"
+    },
+    {
+      "code": "SP",
+      "nameIt": "LA SPEZIA"
+    },
+    {
+      "code": "LT",
+      "nameIt": "LATINA"
+    },
+    {
+      "code": "LE",
+      "nameIt": "LECCE"
+    },
+    {
+      "code": "LC",
+      "nameIt": "LECCO"
+    },
+    {
+      "code": "LI",
+      "nameIt": "LIVORNO"
+    },
+    {
+      "code": "LO",
+      "nameIt": "LODI"
+    },
+    {
+      "code": "LU",
+      "nameIt": "LUCCA"
+    },
+    {
+      "code": "MC",
+      "nameIt": "MACERATA"
+    },
+    {
+      "code": "MN",
+      "nameIt": "MANTOVA"
+    },
+    {
+      "code": "MS",
+      "nameIt": "MASSA CARRARA",
+      "aliases": [
+        "MASSA",
+        "CARRARA"
+      ]
+    },
+    {
+      "code": "MT",
+      "nameIt": "MATERA"
+    },
+    {
+      "code": "ME",
+      "nameIt": "MESSINA"
+    },
+    {
+      "code": "MI",
+      "nameIt": "MILANO"
+    },
+    {
+      "code": "MO",
+      "nameIt": "MODENA"
+    },
+    {
+      "code": "MB",
+      "nameIt": "MONZA E DELLA BRIANZA",
+      "aliases": [
+        "MONZA",
+        "BRIANZA"
+      ]
+    },
+    {
+      "code": "NA",
+      "nameIt": "NAPOLI"
+    },
+    {
+      "code": "NO",
+      "nameIt": "NOVARA"
+    },
+    {
+      "code": "NU",
+      "nameIt": "NUORO"
+    },
+    {
+      "code": "OR",
+      "nameIt": "ORISTANO"
+    },
+    {
+      "code": "PD",
+      "nameIt": "PADOVA"
+    },
+    {
+      "code": "PA",
+      "nameIt": "PALERMO"
+    },
+    {
+      "code": "PR",
+      "nameIt": "PARMA"
+    },
+    {
+      "code": "PV",
+      "nameIt": "PAVIA"
+    },
+    {
+      "code": "PG",
+      "nameIt": "PERUGIA"
+    },
+    {
+      "code": "PU",
+      "nameIt": "PESARO URBINO",
+      "aliases": [
+        "PESARO",
+        "URBINO"
+      ]
+    },
+    {
+      "code": "PE",
+      "nameIt": "PESCARA"
+    },
+    {
+      "code": "PC",
+      "nameIt": "PIACENZA"
+    },
+    {
+      "code": "PI",
+      "nameIt": "PISA"
+    },
+    {
+      "code": "PT",
+      "nameIt": "PISTOIA"
+    },
+    {
+      "code": "PN",
+      "nameIt": "PORDENONE"
+    },
+    {
+      "code": "PZ",
+      "nameIt": "POTENZA"
+    },
+    {
+      "code": "PO",
+      "nameIt": "PRATO"
+    },
+    {
+      "code": "RG",
+      "nameIt": "RAGUSA"
+    },
+    {
+      "code": "RA",
+      "nameIt": "RAVENNA"
+    },
+    {
+      "code": "RC",
+      "nameIt": "REGGIO CALABRIA"
+    },
+    {
+      "code": "RE",
+      "nameIt": "REGGIO EMILIA"
+    },
+    {
+      "code": "RI",
+      "nameIt": "RIETI"
+    },
+    {
+      "code": "RN",
+      "nameIt": "RIMINI"
+    },
+    {
+      "code": "RM",
+      "nameIt": "ROMA"
+    },
+    {
+      "code": "RO",
+      "nameIt": "ROVIGO"
+    },
+    {
+      "code": "SA",
+      "nameIt": "SALERNO"
+    },
+    {
+      "code": "SS",
+      "nameIt": "SASSARI"
+    },
+    {
+      "code": "SV",
+      "nameIt": "SAVONA"
+    },
+    {
+      "code": "SI",
+      "nameIt": "SIENA"
+    },
+    {
+      "code": "SR",
+      "nameIt": "SIRACUSA"
+    },
+    {
+      "code": "SO",
+      "nameIt": "SONDRIO"
+    },
+    {
+      "code": "TA",
+      "nameIt": "TARANTO"
+    },
+    {
+      "code": "TE",
+      "nameIt": "TERAMO"
+    },
+    {
+      "code": "TR",
+      "nameIt": "TERNI"
+    },
+    {
+      "code": "TO",
+      "nameIt": "TORINO"
+    },
+    {
+      "code": "TP",
+      "nameIt": "TRAPANI"
+    },
+    {
+      "code": "TN",
+      "nameIt": "TRENTO"
+    },
+    {
+      "code": "TV",
+      "nameIt": "TREVISO"
+    },
+    {
+      "code": "TS",
+      "nameIt": "TRIESTE"
+    },
+    {
+      "code": "UD",
+      "nameIt": "UDINE"
+    },
+    {
+      "code": "VA",
+      "nameIt": "VARESE"
+    },
+    {
+      "code": "VE",
+      "nameIt": "VENEZIA"
+    },
+    {
+      "code": "VB",
+      "nameIt": "VERBANO CUSIO OSSOLA",
+      "aliases": [
+        "VERBANIA"
+      ]
+    },
+    {
+      "code": "VC",
+      "nameIt": "VERCELLI"
+    },
+    {
+      "code": "VR",
+      "nameIt": "VERONA"
+    },
+    {
+      "code": "VV",
+      "nameIt": "VIBO VALENTIA"
+    },
+    {
+      "code": "VI",
+      "nameIt": "VICENZA"
+    },
+    {
+      "code": "VT",
+      "nameIt": "VITERBO"
+    }
+  ]
+}

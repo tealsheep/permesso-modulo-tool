@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "10",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1)",
+      "nameZh": "填好并签名的申请表（Modulo 1）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Documentazione anagrafica comprovante il legame familiare (tradotta, legalizzata e validata se rilasciata all'estero)",
+      "nameZh": "证明亲属关系的户籍文件（如结婚证、出生证明）。国外开具的要翻译、认证并经意大利使领馆核验；已在意大利户籍登记的，Modulo 1 本身就算自我声明",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia della dichiarazione dei redditi del familiare straniero con il quale si chiede la coesione",
+      "nameZh": "要团聚的那位外国家属的报税单复印件（收入要达到 assegno sociale 年额标准，家属越多要求越高）",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "family.sponsorKind": "straniero"
+        }
+      }
+    },
+    {
+      "nameIt": "Certificato di idoneità alloggiativa (art. 29, comma 3, lett. a, D.Lgs. 286/98) rapportato al nucleo familiare",
+      "nameZh": "住房适宜证明（idoneità alloggiativa），面积要够全家人住",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "family.sponsorKind": "straniero"
+        }
+      }
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno del familiare",
+      "nameZh": "要团聚的那位家属的居留许可 / 居留卡复印件",
+      "basis": "common",
+      "condition": {
+        "equals": {
+          "family.sponsorKind": "straniero"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "23",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1)",
+      "nameZh": "填好并签名的申请表（Modulo 1）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Modulo 2 compilato e sottoscritto (se in possesso di reddito)",
+      "nameZh": "有收入的：另附填好并签名的 Modulo 2",
+      "basis": "official",
+      "condition": {
+        "hasIncome": true
+      }
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Copia dell'istanza di riconoscimento dello status di apolidia",
+      "nameZh": "申请认定无国籍身份的申请书复印件",
+      "basis": "official"
+    }
+  ]
+}

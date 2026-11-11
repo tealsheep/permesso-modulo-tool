@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "31",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1)",
+      "nameZh": "填好并签名的申请表（Modulo 1）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Modulo 2 compilato e sottoscritto (per lo studente lavoratore)",
+      "nameZh": "有工作收入的：另附填好并签名的 Modulo 2",
+      "basis": "official",
+      "condition": {
+        "hasIncome": true
+      }
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit",
+      "condition": {
+        "operations": [
+          "rinnovo"
+        ]
+      }
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Fotocopia della certificazione del corso o della convenzione di tirocinio vistata dalla Rappresentanza diplomatica italiana",
+      "nameZh": "经意大利使领馆盖章的课程证明或实习协议复印件",
+      "basis": "official",
+      "condition": {
+        "operations": [
+          "rilascio"
+        ]
+      }
+    },
+    {
+      "nameIt": "Certificazione della prosecuzione del corso o della convenzione di tirocinio",
+      "nameZh": "课程仍在进行（或实习协议仍有效）的证明",
+      "basis": "official",
+      "condition": {
+        "operations": [
+          "rinnovo"
+        ]
+      }
+    },
+    {
+      "nameIt": "Fotocopia della polizza assicurativa (malattia e infortuni) valida in Italia per la durata del permesso",
+      "nameZh": "在意大利有效、覆盖整个居留期的医疗和意外保险单复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Documentazione attestante la disponibilità di mezzi economici sufficienti per la durata del permesso",
+      "nameZh": "证明居留期内有足够生活费用的文件（如银行存款证明、奖学金证明）",
+      "basis": "official",
+      "condition": {
+        "operations": [
+          "rinnovo"
+        ]
+      }
+    }
+  ]
+}

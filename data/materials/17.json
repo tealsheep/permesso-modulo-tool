@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "verifiedOn": "2026-11-05",
+  "applicationCode": "17",
+  "items": [
+    {
+      "nameIt": "Istanza compilata e sottoscritta (Modulo 1)",
+      "nameZh": "填好并签名的申请表（Modulo 1）",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Modulo 2 compilato e sottoscritto",
+      "nameZh": "另附填好并签名的 Modulo 2（你的类别要求）",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "application.art27Letter": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "o",
+            "p",
+            "r"
+          ]
+        }
+      }
+    },
+    {
+      "nameIt": "Marca da bollo da 16,00 euro",
+      "nameZh": "16 欧元印花税票（贴在 Modulo 1 第 1 页）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Fotocopia di tutto il passaporto o di altro documento equipollente",
+      "nameZh": "整本护照（或同等证件）的复印件",
+      "basis": "official"
+    },
+    {
+      "nameIt": "Fotocopia del permesso / carta di soggiorno da rinnovare o aggiornare",
+      "nameZh": "要续签 / 更新的居留许可或居留卡复印件",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "Ricevuta del bollettino postale",
+      "nameZh": "缴费单收据（邮局付款后放入信封）",
+      "basis": "kit"
+    },
+    {
+      "nameIt": "4 fototessere (da portare in Questura)",
+      "nameZh": "4 张证件照（去 Questura 按指纹时带上）",
+      "basis": "common"
+    },
+    {
+      "nameIt": "Fotocopia del contratto di soggiorno e ricevuta della raccomandata di invio allo Sportello Unico (se è stata modificata una clausola)",
+      "nameZh": "居留合同条款改过的：附新居留合同复印件和寄给 Sportello Unico 的挂号信回执；没改过的不用附",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "application.art27Letter": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "i",
+            "p",
+            "r-bis"
+          ]
+        }
+      }
+    },
+    {
+      "nameIt": "Copia del nulla osta al lavoro prorogato, del contratto di soggiorno e della ricevuta di ritorno della raccomandata",
+      "nameZh": "延期后的工作许可（nulla osta prorogato）复印件、居留合同复印件、寄合同挂号信的回执",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "application.art27Letter": [
+            "m",
+            "n",
+            "o"
+          ]
+        }
+      }
+    },
+    {
+      "nameIt": "Documentazione attestante la frequenza al corso di formazione (rilasciata dall'ente accreditato)",
+      "nameZh": "上职业培训课程的：认证培训机构出具的出勤证明",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "application.art27Letter": [
+            "f"
+          ]
+        }
+      }
+    },
+    {
+      "nameIt": "Fotocopia del contratto di soggiorno e ricevuta della raccomandata (addestramento con trasferimento temporaneo o distacco)",
+      "nameZh": "被所属机构派来受训（trasferimento / distacco）的：居留合同复印件和寄给 Sportello Unico 的挂号信回执",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "application.art27Letter": [
+            "f"
+          ]
+        }
+      }
+    },
+    {
+      "nameIt": "Nota di accredito del Ministero degli Affari Esteri con l'incarico svolto",
+      "nameZh": "外交部的记者注册证明（nota di accredito），上面写明所任职务",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "application.art27Letter": [
+            "q"
+          ]
+        }
+      }
+    },
+    {
+      "nameIt": "Documentazione attestante l'incarico svolto presso l'ente di ricerca",
+      "nameZh": "在研究机构任职的证明文件复印件",
+      "basis": "official",
+      "condition": {
+        "equals": {
+          "application.art27Letter": [
+            "r"
+          ]
+        }
+      }
+    },
+    {
+      "nameIt": "Ultime buste paga",
+      "nameZh": "最近几个月的工资单复印件",
+      "basis": "common",
+      "condition": {
+        "equals": {
+          "application.art27Letter": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "i",
+            "m",
+            "n",
+            "o",
+            "p",
+            "r-bis"
+          ]
+        }
+      }
+    }
+  ]
+}
