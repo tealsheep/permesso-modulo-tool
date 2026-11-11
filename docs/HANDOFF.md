@@ -30,6 +30,8 @@
   - 参考图和旧 `.git` 移到 `C:\permesso-private-backup\`（旧历史 `git fsck` 通过）；在原目录 `git init -b main`。
   - 新仓库署名 `tealsheep` + GitHub 隐藏邮箱，用户已登录的 GitHub 账号就是 tealsheep。
   - 上线当天核对费用：€70,46 / €80,46 / €130,46、印花税 €16、邮寄 €30，和数据一致。
+  - **2026-11-11 已上线**：<https://tealsheep.github.io/permesso-modulo-tool/>。提交 `0b2a4b5` 首次部署时，GitHub 构建机器两次解析不了 `security.ubuntu.com`，装不了浏览器系统依赖。工作流改为装不了时只下载 Chromium（`564bb11`），生产测试照跑；这一轮构建、部署都成功。
+  - 线上实测：手机尺寸和桌面尺寸都能打开；用虚构资料生成了参考件；控制台没有报错；资源只从 tealsheep.github.io 加载。
   - 与 D1"完整开发完成后才发布"的关系：用户 2026-11-10 说"改完能用无 bug 直接上线"，按此上线。34 / 35 和职业培训实习等 3 种仍显示"即将支持"；OPEN_QUESTIONS 里"发布前最好确认"的几项（30 / 28 / 06 签发还是转换等）仍未向 Questura 核实，工具里已写"以当地 Questura 为准"。
 
 ## 2026-11-10 · Claude Code（姓名、地址太长：改成只在缴费单上缩，D58）
