@@ -25,7 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
-      - run: npx playwright install --with-deps chromium
+      # Hosted runners already ship Chromium's system libraries; if apt mirrors are unreachable,
+      # fall back to downloading the browser alone. test:production still fails if a library is missing.
+      - run: npx playwright install --with-deps chromium || npx playwright install chromium
       - run: npm run test:production
       - name: Upload only verified build output
         if: vars.PAGES_RELEASE_READY == 'true' && github.event_name != 'pull_request' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
